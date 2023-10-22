@@ -8,8 +8,8 @@
     <title>House World</title>
 </head>
 
-<body>
-    <header>
+<body class="wrapper">
+    <header class="header">
         <div class="container">
             <article class="content">
                 <a href=""><img src="./images/logo.png" alt="Логотип компании"></a>
@@ -58,14 +58,32 @@
             </article>
         </div>
         <nav>
-            <a href=""><span>ПРОЕКТЫ</span><img src="./images/down-header.png" alt="Вниз"></a>
-            <a href=""><span>ФОТО РАБОТ</span></a>
-            <a href=""><span>АКЦИИ</span></a>
-            <a href=""><span>УСЛУГИ</span><img src="./images/down-header.png" alt="Вниз"></a>
-            <a href=""><span>ЗАКАЗЧИКУ</span><img src="./images/down-header.png" alt="Вниз"></a>
-            <a href=""><span>КОНТАКТЫ</span></a>
-            <a href=""><img src="./images/heart.png" alt="Сердце"><span>ИЗБРАННОЕ</span></a>
-            <a href=""><img src="./images/magnifier.png" alt="Лупа"><span>ПОИСК</span></a>
+            <ul>
+                <li>
+                    <a href=""><span>ПРОЕКТЫ</span><img src="./images/down-header.png" alt="Вниз"></a>
+                </li>
+                <li>
+                    <a href=""><span>ФОТО РАБОТ</span></a>
+                </li>
+                <li>
+                    <a href=""><span>АКЦИИ</span></a>
+                </li>
+                <li>
+                    <a href=""><span>УСЛУГИ</span><img src="./images/down-header.png" alt="Вниз"></a>
+                </li>
+                <li>
+                    <a href=""><span>ЗАКАЗЧИКУ</span><img src="./images/down-header.png" alt="Вниз"></a>
+                </li>
+                <li>
+                    <a href=""><span>КОНТАКТЫ</span></a>
+                </li>
+                <li>
+                    <a href=""><img src="./images/heart.png" alt="Сердце"><span>ИЗБРАННОЕ</span></a>
+                </li>
+                <li>
+                    <a href=""><img src="./images/magnifier.png" alt="Лупа"><span>ПОИСК</span></a>
+                </li>
+            </ul>
         </nav>
         <section class="section-header">
             <h1>
@@ -98,7 +116,7 @@
         </section>
     </header>
 
-    <main>
+    <main class="main">
         <!-- <img src="./images/tree-1.png" alt="Дерево" class="tree"> -->
         <section class="first-main-section">
             <div class="first-left-section">
@@ -178,421 +196,434 @@
         </section>
 
         <section class="second-main-section">
-            <h1>
+            <h1 class="second-main-section__title">
                 Мы строим деревнные дома и бани
-                <span>с учетом всех особенностей Курска</span>
+                <span class="second-main-section__title_normal">с учетом всех особенностей Курска</span>
             </h1>
-            <div class="wrapper">
-                <div class="container-one">
-                    <article class="content">
-                        <div>
-                            <p>Каркасные дома</p>
-                            <p>100+ проектов</p>
-                        </div>
-                        <div>
-                            <p>
-                                от
-                                <span>21 800</span>
-                                руб/м
-                            </p>
-                            <button>СМОТРЕТЬ ПРОЕКТЫ</button>
-                        </div>
+            <div class="card-wrapper">
+                <div class="card-wrapper__col">
+                    <article class="card card_long card_bg1">
+                        <div class="card_bg"></div>
+                        <p class="card__title card__title_long">Каркасные дома</p>
+                        <p class="card__tag card__tag_long">100+ проектов</p>
+                        <p class="card__price card__price_long">
+                            от
+                            <span class="card__price_bold card__price_bold-long">21 800</span>
+                            руб/м
+                        </p>
+                        <button class="card__btn card__btn_long">СМОТРЕТЬ ПРОЕКТЫ</button>
                     </article>
-                    <article class="content">
-                        <div>
-                            <p>Перевозные бани</p>
-                            <p>100+ проектов</p>
-                        </div>
-                        <div>
-                            <button>СМОТРЕТЬ ПРОЕКТЫ</button>
-                            <p>
-                                от
-                                <span>19 700</span>
-                                руб/м
-                            </p>
-                        </div>
+                    <article class="card card_bg2">
+                        <div class="card_bg"></div>
+                        <p class="card__title">Перевозные бани</p>
+                        <p class="card__tag">100+ проектов</p>
+                        <p class="card__price">
+                            от
+                            <span class="card__price_bold">19 700</span>
+                            руб/м
+                        </p>
+                        <button class="card__btn">СМОТРЕТЬ ПРОЕКТЫ</button>
                     </article>
                 </div>
-                <div class="container-two">
-                    <article class="content">
-                        <div>
-                            <p>Дома из бруса</p>
-                            <p>100+ проектов</p>
-                        </div>
-                        <div>
-                            <button>СМОТРЕТЬ ПРОЕКТЫ</button>
-                            <p>
-                                от
-                                <span>19 700</span>
-                                руб/м
-                            </p>
-                        </div>
+                <div class="card-wrapper__col card-wrapper__col_mr-inline">
+                    <article class="card card_bg3">
+                        <div class="card_bg"></div>
+                        <p class="card__title">Дома из бруса</p>
+                        <p class="card__tag">100+ проектов</p>
+                        <p class="card__price">
+                            от
+                            <span class="card__price_bold">19 700</span>
+                            руб/м
+                        </p>
+                        <button class="card__btn">СМОТРЕТЬ ПРОЕКТЫ</button>
                     </article>
-                    <article class="content">
-                        <div>
-                            <p>Бани из бруса</p>
-                            <p>100+ проектов</p>
-                        </div>
-                        <div>
-                            <button>СМОТРЕТЬ ПРОЕКТЫ</button>
-                            <p>
-                                от
-                                <span>19 700</span>
-                                руб/м
-                            </p>
-                        </div>
+                    <article class="card card_bg4">
+                        <div class="card_bg"></div>
+                        <p class="card__title">Бани из бруса</p>
+                        <p class="card__tag">100+ проектов</p>
+                        <p class="card__price">
+                            от
+                            <span class="card__price_bold">19 700</span>
+                            руб/м
+                        </p>
+                        <button class="card__btn">СМОТРЕТЬ ПРОЕКТЫ</button>
                     </article>
-                    <article class="content">
-                        <div>
-                            <p>Срубы под усадку</p>
-                            <p>100+ проектов</p>
-                        </div>
-                        <div>
-                            <button>СМОТРЕТЬ ПРОЕКТЫ</button>
-                            <p>
-                                от
-                                <span>19 700</span>
-                                руб/м
-                            </p>
-                        </div>
+                    <article class="card card_bg5">
+                        <div class="card_bg"></div>
+                        <p class="card__title">Срубы под усадку</p>
+                        <p class="card__tag">100+ проектов</p>
+                        <p class="card__price">
+                            от
+                            <span class="card__price_bold">19 700</span>
+                            руб/м
+                        </p>
+                        <button class="card__btn">СМОТРЕТЬ ПРОЕКТЫ</button>
                     </article>
                 </div>
-                <div class="container-three">
-                    <article class="content">
-                        <div>
-                            <p>Срубы под усадку</p>
-                            <p>100+ проектов</p>
-                        </div>
-                        <div>
-                            <button>СМОТРЕТЬ ПРОЕКТЫ</button>
-                            <p>
-                                от
-                                <span>19 700</span>
-                                руб/м
-                            </p>
-                        </div>
+                <div class="card-wrapper__col">
+                    <article class="card card_bg6">
+                        <div class="card_bg"></div>
+                        <p class="card__title">Срубы под усадку</p>
+                        <p class="card__tag">100+ проектов</p>
+                        <p class="card__price">
+                            от
+                            <span class="card__price_bold">19 700</span>
+                            руб/м
+                        </p>
+                        <button class="card__btn">СМОТРЕТЬ ПРОЕКТЫ</button>
                     </article>
-                    <article class="content">
-                        <div>
-                            <p>Каркасные бани</p>
-                            <p>100+ проектов</p>
-                        </div>
-                        <div>
-                            <p>
-                                от
-                                <span>20 800</span>
-                                руб/м
-                            </p>
-                            <button>СМОТРЕТЬ ПРОЕКТЫ</button>
-                        </div>
+                    <article class="card card_long card_bg1">
+                        <div class="card_bg"></div>
+                        <p class="card__title card__title_long">Каркасные бани</p>
+                        <p class="card__tag card__tag_long">100+ проектов</p>
+                        <p class="card__price card__price_long">
+                            от
+                            <span class="card__price_bold card__price_bold-long">20 800</span>
+                            руб/м
+                        </p>
+                        <button class="card__btn card__btn_long">СМОТРЕТЬ ПРОЕКТЫ</button>
                     </article>
                 </div>
             </div>
         </section>
 
         <section class="third-main-section">
-            <h1>Посмотрите популярные проеты домов</h1>
-            <div>
-                <nav>
-                    <a href=""><img src="./images/left.png" alt="Влево"></a>
-                    <a href="">Одноэтажный</a>
-                    <a href="" class="nav-active">С мансардой</a>
-                    <a href="">Двухэтажный</a>
-                    <a href="">С цокольным этажом</a>
-                    <a href="">Трехэтажные</a>
-                    <a href="">С панорамными окнами</a>
-                    <a href="">С гаражом</a>
-                    <a href=""><img src="./images/right.png" alt="Вправо"></a>
-                    <a href="">Смотреть все</a>
+            <h1 class="third-main-section__title">Посмотрите популярные проекты домов</h1>
+            <div class="card-wrapper">
+                <nav class="nav-list">
+                    <ul class="nav-list__menu">
+                        <li class="nav-list__item nav-list__item_bg-none">
+                            <a href="" class="nav-list__link"><img class="nav-list__link-img nav-list__link-img_left" src="./images/left.png" alt="Влево"></a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="" class="nav-list__link">Одноэтажный</a>
+                        </li>
+                        <li class="nav-list__item nav-list__item_active">
+                            <a href="" class="nav-list__link nav-list__link_active">С мансардой</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="" class="nav-list__link">Двухэтажный</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="" class="nav-list__link">С цокольным этажом</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="" class="nav-list__link">Трехэтажные</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="" class="nav-list__link">С панорамными окнами</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="" class="nav-list__link">С гаражом</a>
+                        </li>
+                        <li class="nav-list__item nav-list__item_bg-none">
+                            <a href="" class="nav-list__link"><img class="nav-list__link-img nav-list__link-img_right" src="./images/right.png" alt="Вправо"></a>
+                        </li>
+                        <li class="nav-list__item nav-list__item_bg-none nav-list__item_mr">
+                            <a href="" class="nav-list__link nav-list__link_yellow">Смотреть все</a>
+                        </li>
+                    </ul>
                 </nav>
-                <div class="container">
-                    <article class="content">
-                        <img src="./images/home-10.png" alt="Дом">
-                        <h3>"Атаман"</h3>
-                        <div class="description-header">
-                            <div>
-                                <p>
+                <div class="card-wrapper__str">
+                    <article class="cell">
+                        <img class="cell__img" src="./images/home-10.jpg" alt="Дом">
+                        <h3 class="cell__title">"Атаман"</h3>
+                        <div class="cell__header">
+                            <div class="description description_mr-right">
+                                <p class="description__text">
                                     Площадь:
-                                    <span>108 м</span>
+                                    <span class="description__text_dark">108 м</span>
                                 </p>
-                                <p>
+                                <p class="description__text">
                                     Размеры:
-                                    <span>7x9</span>
+                                    <span class="description__text_dark">7x9</span>
                                 </p>
                             </div>
-                            <div>
-                                <p>
+                            <div class="description">
+                                <p class="description__text">
                                     Срок стройки:
-                                    <span>16 дней</span>
+                                    <span class="description__text_dark">16 дней</span>
                                 </p>
-                                <p>
+                                <p class="description__text">
                                     Комнат:
-                                    <span>5</span>
+                                    <span class="description__text_dark">5</span>
                                 </p>
                             </div>
                         </div>
-                        <ul class="description-main">
-                            <li>
-                                <span>Тип дома:</span>
-                                <span>Каркасный</span>
+                        <ul class="cell__main">
+                            <li class="cell__item">
+                                <p class="cell__item_circle"></p>
+                                Тип дома:
+                                <span class="cell__item_dark">Каркасный</span>
                             </li>
-                            <li>
-                                <span>Стоимость:</span>
-                                <span>от</span>
-                                <span>1 780 000</span>
-                                <span>руб</span>
+                            <li class="cell__item">
+                                <p class="cell__item_circle"></p>
+                                Стоимость:
+                                <span class="cell__item_dark cell__item_dark-right">от</span>
+                                <span class="cell__item_green">1 780 000</span>
+                                <span class="cell__item_dark">руб</span>
                             </li>
                         </ul>
-                        <div class="description-footer">
-                            <button>
-                                <span>СМОТРЕТЬ ПРОЕКТЫ </span>
-                                <img src="./images/rightButton.png" alt="Вправо">
+                        <div class="cell__footer">
+                            <button class="cell__btn">
+                                <span class="cell__btn_caps">СМОТРЕТЬ ПРОЕКТЫ </span>
+                                <img class="cell__btn_img" src="./images/rightButton.png" alt="Вправо">
                             </button>
-                            <div>
-                                <img src="./images/ok.png" alt="Галочка">
-                                <p>Индивидуальная планировка дома</p>
+                            <div class="cell__diamant">
+                                <img class="cell__diamant_img" src="./images/ok.png" alt="Галочка">
+                                <p class="cell__diamant_text">Индивидуальная планировка дома</p>
                             </div>
                         </div>
                     </article>
-                    <article class="content">
-                        <img src="./images/home-10.png" alt="Дом">
-                        <h3>"Атаман"</h3>
-                        <div class="description-header">
-                            <div>
-                                <p>
+                    <article class="cell cell_mr-inline">
+                        <img class="cell__img" src="./images/home-10.jpg" alt="Дом">
+                        <h3 class="cell__title">"Атаман"</h3>
+                        <div class="cell__header">
+                            <div class="description description_mr-right">
+                                <p class="description__text">
                                     Площадь:
-                                    <span>108 м</span>
+                                    <span class="description__text_dark">108 м</span>
                                 </p>
-                                <p>
+                                <p class="description__text">
                                     Размеры:
-                                    <span>7x9</span>
+                                    <span class="description__text_dark">7x9</span>
                                 </p>
                             </div>
-                            <div>
-                                <p>
+                            <div class="description">
+                                <p class="description__text">
                                     Срок стройки:
-                                    <span>16 дней</span>
+                                    <span class="description__text_dark">16 дней</span>
                                 </p>
-                                <p>
+                                <p class="description__text">
                                     Комнат:
-                                    <span>5</span>
+                                    <span class="description__text_dark">5</span>
                                 </p>
                             </div>
                         </div>
-                        <ul class="description-main">
-                            <li>
-                                <span>Тип дома:</span>
-                                <span>Каркасный</span>
+                        <ul class="cell__main">
+                            <li class="cell__item">
+                                <p class="cell__item_circle"></p>
+                                Тип дома:
+                                <span class="cell__item_dark">Каркасный</span>
                             </li>
-                            <li>
-                                <span>Стоимость:</span>
-                                <span>от</span>
-                                <span>1 780 000</span>
-                                <span>руб</span>
+                            <li class="cell__item">
+                                <p class="cell__item_circle"></p>
+                                Стоимость:
+                                <span class="cell__item_dark cell__item_dark-right">от</span>
+                                <span class="cell__item_green">1 780 000</span>
+                                <span class="cell__item_dark">руб</span>
                             </li>
                         </ul>
-                        <div class="description-footer">
-                            <button>
-                                <span>СМОТРЕТЬ ПРОЕКТЫ </span>
-                                <img src="./images/rightButton.png" alt="Вправо">
+                        <div class="cell__footer">
+                            <button class="cell__btn">
+                                <span class="cell__btn_caps">СМОТРЕТЬ ПРОЕКТЫ </span>
+                                <img class="cell__btn_img" src="./images/rightButton.png" alt="Вправо">
                             </button>
-                            <div>
-                                <img src="./images/ok.png" alt="Галочка">
-                                <p>Индивидуальная планировка дома</p>
+                            <div class="cell__diamant">
+                                <img class="cell__diamant_img" src="./images/ok.png" alt="Галочка">
+                                <p class="cell__diamant_text">Индивидуальная планировка дома</p>
                             </div>
                         </div>
                     </article>
-                    <article class="content">
-                        <img src="./images/home-10.png" alt="Дом">
-                        <h3>"Атаман"</h3>
-                        <div class="description-header">
-                            <div>
-                                <p>
+                    <article class="cell">
+                        <img class="cell__img" src="./images/home-10.jpg" alt="Дом">
+                        <h3 class="cell__title">"Атаман"</h3>
+                        <div class="cell__header">
+                            <div class="description description_mr-right">
+                                <p class="description__text">
                                     Площадь:
-                                    <span>108 м</span>
+                                    <span class="description__text_dark">108 м</span>
                                 </p>
-                                <p>
+                                <p class="description__text">
                                     Размеры:
-                                    <span>7x9</span>
+                                    <span class="description__text_dark">7x9</span>
                                 </p>
                             </div>
-                            <div>
-                                <p>
+                            <div class="description">
+                                <p class="description__text">
                                     Срок стройки:
-                                    <span>16 дней</span>
+                                    <span class="description__text_dark">16 дней</span>
                                 </p>
-                                <p>
+                                <p class="description__text">
                                     Комнат:
-                                    <span>5</span>
+                                    <span class="description__text_dark">5</span>
                                 </p>
                             </div>
                         </div>
-                        <ul class="description-main">
-                            <li>
-                                <span>Тип дома:</span>
-                                <span>Каркасный</span>
+                        <ul class="cell__main">
+                            <li class="cell__item">
+                                <p class="cell__item_circle"></p>
+                                Тип дома:
+                                <span class="cell__item_dark">Каркасный</span>
                             </li>
-                            <li>
-                                <span>Стоимость:</span>
-                                <span>от</span>
-                                <span>1 780 000</span>
-                                <span>руб</span>
+                            <li class="cell__item">
+                                <p class="cell__item_circle"></p>
+                                Стоимость:
+                                <span class="cell__item_dark cell__item_dark-right">от</span>
+                                <span class="cell__item_green">1 780 000</span>
+                                <span class="cell__item_dark">руб</span>
                             </li>
                         </ul>
-                        <div class="description-footer">
-                            <button>
-                                <span>СМОТРЕТЬ ПРОЕКТЫ </span>
-                                <img src="./images/rightButton.png" alt="Вправо">
+                        <div class="cell__footer">
+                            <button class="cell__btn">
+                                <span class="cell__btn_caps">СМОТРЕТЬ ПРОЕКТЫ </span>
+                                <img class="cell__btn_img" src="./images/rightButton.png" alt="Вправо">
                             </button>
-                            <div>
-                                <img src="./images/ok.png" alt="Галочка">
-                                <p>Индивидуальная планировка дома</p>
+                            <div class="cell__diamant">
+                                <img class="cell__diamant_img" src="./images/ok.png" alt="Галочка">
+                                <p class="cell__diamant_text">Индивидуальная планировка дома</p>
                             </div>
                         </div>
                     </article>
                 </div>
-                <div class="container">
-                    <article class="content">
-                        <img src="./images/home-10.png" alt="Дом">
-                        <h3>"Атаман"</h3>
-                        <div class="description-header">
-                            <div>
-                                <p>
+                <div class="card-wrapper__str card-wrapper__str_bottom">
+                    <article class="cell">
+                        <img class="cell__img" src="./images/home-10.jpg" alt="Дом">
+                        <h3 class="cell__title">"Атаман"</h3>
+                        <div class="cell__header">
+                            <div class="description description_mr-right">
+                                <p class="description__text">
                                     Площадь:
-                                    <span>108 м</span>
+                                    <span class="description__text_dark">108 м</span>
                                 </p>
-                                <p>
+                                <p class="description__text">
                                     Размеры:
-                                    <span>7x9</span>
+                                    <span class="description__text_dark">7x9</span>
                                 </p>
                             </div>
-                            <div>
-                                <p>
+                            <div class="description">
+                                <p class="description__text">
                                     Срок стройки:
-                                    <span>16 дней</span>
+                                    <span class="description__text_dark">16 дней</span>
                                 </p>
-                                <p>
+                                <p class="description__text">
                                     Комнат:
-                                    <span>5</span>
+                                    <span class="description__text_dark">5</span>
                                 </p>
                             </div>
                         </div>
-                        <ul class="description-main">
-                            <li>
-                                <span>Тип дома:</span>
-                                <span>Каркасный</span>
+                        <ul class="cell__main">
+                            <li class="cell__item">
+                                <p class="cell__item_circle"></p>
+                                Тип дома:
+                                <span class="cell__item_dark">Каркасный</span>
                             </li>
-                            <li>
-                                <span>Стоимость:</span>
-                                <span>от</span>
-                                <span>1 780 000</span>
-                                <span>руб</span>
+                            <li class="cell__item">
+                                <p class="cell__item_circle"></p>
+                                Стоимость:
+                                <span class="cell__item_dark cell__item_dark-right">от</span>
+                                <span class="cell__item_green">1 780 000</span>
+                                <span class="cell__item_dark">руб</span>
                             </li>
                         </ul>
-                        <div class="description-footer">
-                            <button>
-                                <span>СМОТРЕТЬ ПРОЕКТЫ </span>
-                                <img src="./images/rightButton.png" alt="Вправо">
+                        <div class="cell__footer">
+                            <button class="cell__btn">
+                                <span class="cell__btn_caps">СМОТРЕТЬ ПРОЕКТЫ </span>
+                                <img class="cell__btn_img" src="./images/rightButton.png" alt="Вправо">
                             </button>
-                            <div>
-                                <img src="./images/ok.png" alt="Галочка">
-                                <p>Индивидуальная планировка дома</p>
+                            <div class="cell__diamant">
+                                <img class="cell__diamant_img" src="./images/ok.png" alt="Галочка">
+                                <p class="cell__diamant_text">Индивидуальная планировка дома</p>
                             </div>
                         </div>
                     </article>
-                    <article class="content">
-                        <img src="./images/home-10.png" alt="Дом">
-                        <h3>"Атаман"</h3>
-                        <div class="description-header">
-                            <div>
-                                <p>
+                    <article class="cell cell_mr-inline">
+                        <img class="cell__img" src="./images/home-10.jpg" alt="Дом">
+                        <h3 class="cell__title">"Атаман"</h3>
+                        <div class="cell__header">
+                            <div class="description description_mr-right">
+                                <p class="description__text">
                                     Площадь:
-                                    <span>108 м</span>
+                                    <span class="description__text_dark">108 м</span>
                                 </p>
-                                <p>
+                                <p class="description__text">
                                     Размеры:
-                                    <span>7x9</span>
+                                    <span class="description__text_dark">7x9</span>
                                 </p>
                             </div>
-                            <div>
-                                <p>
+                            <div class="description">
+                                <p class="description__text">
                                     Срок стройки:
-                                    <span>16 дней</span>
+                                    <span class="description__text_dark">16 дней</span>
                                 </p>
-                                <p>
+                                <p class="description__text">
                                     Комнат:
-                                    <span>5</span>
+                                    <span class="description__text_dark">5</span>
                                 </p>
                             </div>
                         </div>
-                        <ul class="description-main">
-                            <li>
-                                <span>Тип дома:</span>
-                                <span>Каркасный</span>
+                        <ul class="cell__main">
+                            <li class="cell__item">
+                                <p class="cell__item_circle"></p>
+                                Тип дома:
+                                <span class="cell__item_dark">Каркасный</span>
                             </li>
-                            <li>
-                                <span>Стоимость:</span>
-                                <span>от</span>
-                                <span>1 780 000</span>
-                                <span>руб</span>
+                            <li class="cell__item">
+                                <p class="cell__item_circle"></p>
+                                Стоимость:
+                                <span class="cell__item_dark cell__item_dark-right">от</span>
+                                <span class="cell__item_green">1 780 000</span>
+                                <span class="cell__item_dark">руб</span>
                             </li>
                         </ul>
-                        <div class="description-footer">
-                            <button>
-                                <span>СМОТРЕТЬ ПРОЕКТЫ </span>
-                                <img src="./images/rightButton.png" alt="Вправо">
+                        <div class="cell__footer">
+                            <button class="cell__btn">
+                                <span class="cell__btn_caps">СМОТРЕТЬ ПРОЕКТЫ </span>
+                                <img class="cell__btn_img" src="./images/rightButton.png" alt="Вправо">
                             </button>
-                            <div>
-                                <img src="./images/ok.png" alt="Галочка">
-                                <p>Индивидуальная планировка дома</p>
+                            <div class="cell__diamant">
+                                <img class="cell__diamant_img" src="./images/ok.png" alt="Галочка">
+                                <p class="cell__diamant_text">Индивидуальная планировка дома</p>
                             </div>
                         </div>
                     </article>
-                    <article class="content">
-                        <img src="./images/home-10.png" alt="Дом">
-                        <h3>"Атаман"</h3>
-                        <div class="description-header">
-                            <div>
-                                <p>
+                    <article class="cell">
+                        <img class="cell__img" src="./images/home-10.jpg" alt="Дом">
+                        <h3 class="cell__title">"Атаман"</h3>
+                        <div class="cell__header">
+                            <div class="description description_mr-right">
+                                <p class="description__text">
                                     Площадь:
-                                    <span>108 м</span>
+                                    <span class="description__text_dark">108 м</span>
                                 </p>
-                                <p>
+                                <p class="description__text">
                                     Размеры:
-                                    <span>7x9</span>
+                                    <span class="description__text_dark">7x9</span>
                                 </p>
                             </div>
-                            <div>
-                                <p>
+                            <div class="description">
+                                <p class="description__text">
                                     Срок стройки:
-                                    <span>16 дней</span>
+                                    <span class="description__text_dark">16 дней</span>
                                 </p>
-                                <p>
+                                <p class="description__text">
                                     Комнат:
-                                    <span>5</span>
+                                    <span class="description__text_dark">5</span>
                                 </p>
                             </div>
                         </div>
-                        <ul class="description-main">
-                            <li>
-                                <span>Тип дома:</span>
-                                <span>Каркасный</span>
+                        <ul class="cell__main">
+                            <li class="cell__item">
+                                <p class="cell__item_circle"></p>
+                                Тип дома:
+                                <span class="cell__item_dark">Каркасный</span>
                             </li>
-                            <li>
-                                <span>Стоимость:</span>
-                                <span>от</span>
-                                <span>1 780 000</span>
-                                <span>руб</span>
+                            <li class="cell__item">
+                                <p class="cell__item_circle"></p>
+                                Стоимость:
+                                <span class="cell__item_dark cell__item_dark-right">от</span>
+                                <span class="cell__item_green">1 780 000</span>
+                                <span class="cell__item_dark">руб</span>
                             </li>
                         </ul>
-                        <div class="description-footer">
-                            <button>
-                                <span>СМОТРЕТЬ ПРОЕКТЫ </span>
-                                <img src="./images/rightButton.png" alt="Вправо">
+                        <div class="cell__footer">
+                            <button class="cell__btn">
+                                <span class="cell__btn_caps">СМОТРЕТЬ ПРОЕКТЫ </span>
+                                <img class="cell__btn_img" src="./images/rightButton.png" alt="Вправо">
                             </button>
-                            <div>
-                                <img src="./images/ok.png" alt="Галочка">
-                                <p>Индивидуальная планировка дома</p>
+                            <div class="cell__diamant">
+                                <img class="cell__diamant_img" src="./images/ok.png" alt="Галочка">
+                                <p class="cell__diamant_text">Индивидуальная планировка дома</p>
                             </div>
                         </div>
                     </article>
@@ -606,14 +637,28 @@
                 идеальный дом
                 <span>всего за 6 этапов</span>
             </h1>
-            <div class="wrapper">
+            <div>
                 <nav>
-                    <a href="" class="nav-active">Этап 1</a>
-                    <a href="">Этап 2</a>
-                    <a href="">Этап 3</a>
-                    <a href="">Этап 4</a>
-                    <a href="">Этап 5</a>
-                    <a href="">Этап 6</a>
+                    <ul>
+                        <li>
+                            <a href="" class="nav-active">Этап 1</a>
+                        </li>
+                        <li>
+                            <a href="">Этап 2</a>
+                        </li>
+                        <li>
+                            <a href="">Этап 3</a>
+                        </li>
+                        <li>
+                            <a href="">Этап 4</a>
+                        </li>
+                        <li>
+                            <a href="">Этап 5</a>
+                        </li>
+                        <li>
+                            <a href="">Этап 6</a>
+                        </li>
+                    </ul>
                 </nav>
                 <div class="container">
                     <img src="./images/coordinationWithClients.png" alt="Согласование проекта">
@@ -730,17 +775,17 @@
                 Посмотрите
                 <span>дома, построенные нами за прошлый год</span>
             </h1>
-            <div class="wrapper">
+            <div>
                 <div class="block-images">
                     <img src="./images/home-12.png" alt="Дом">
                     <div>
-                        <img src="./images/home-11.png" alt="Дом">
-                        <img src="./images/home-11.png" alt="Дом">
-                        <img src="./images/home-11.png" alt="Дом">
-                        <img src="./images/home-11.png" alt="Дом">
+                        <!-- <img src="./images/home-11.jpg" alt="Дом">
+                        <img src="./images/home-11.jpg" alt="Дом">
+                        <img src="./images/home-11.jpg" alt="Дом">
+                        <img src="./images/home-11.jpg" alt="Дом"> -->
                     </div>
                 </div>
-                <div class="wrapper">
+                <div>
                     <div class="geolocations">
                         <a href=""><img src="./images/geolocationGreen.png" alt="Геолокация"></a>
                         <a href="">Показать на карте</a>
@@ -844,7 +889,7 @@
                         <span>Зададите</span>
                         вопросы руководителю строительства
                     </p>
-                </article>  
+                </article>
             </div>
             <form class="form-excursion">
                 <div>
@@ -903,58 +948,58 @@
         </section>
 
         <section class="ninth-main-section">
-            <h1>
+            <h1 class="ninth-main-section__title">
                 Более 200 отзывов
-                <span>от наших клиентов</span>
+                <span class="ninth-main-section__title_normal">от наших клиентов</span>
             </h1>
-            <div class="container">
-                <a href=""><img src="./images/left.png" alt="Влево"></a>
-                <div>
-                    <div>
-                        <img src="./images/Daria.png" alt="Дарья">
-                        <div>
-                            <h3>Дарья Достоевская</h3>
-                            <p>23 декабря 2022</p>
+            <div class="slider">
+                <a href="" class="slider__link slider__link_left"><img src="./images/left.png" alt="Влево"></a>
+                <div class="reviews">
+                    <div class="reviews__profile">
+                        <img class="img-person" src="./images/Daria.png" alt="Дарья">
+                        <div class="profile">
+                            <h3 class="profile__name">Дарья <br> Достоевская</h3>
+                            <p class="profile__data">23 декабря 2022</p>
                         </div>
-                        <a href=""><img src="./images/google.png" alt="Гугл"></a>
+                        <a href="" class="google"><img src="./images/google.png" alt="Гугл"></a>
                     </div>
-                    <p>
+                    <p class="reviews__text">
                         Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро
                         заполнить макеты или прототипы содержимым...
-                        <a href="">Читать дальше</a>
+                        <a href="" class="reviews__text_link">Читать дальше</a>
                     </p>
                 </div>
-                <div class="container">
-                    <div>
-                        <img src="./images/Evgeny.png" alt="Евгений">
-                        <div>
-                            <h3>Евгений Маяковский</h3>
-                            <p>23 декабря 2022</p>
+                <div class="reviews reviews_mr-inline">
+                    <div class="reviews__profile">
+                        <img class="img-person" src="./images/Evgeny.png" alt="Евгений">
+                        <div class="profile">
+                            <h3 class="profile__name">Евгений <br> Маяковский</h3>
+                            <p class="profile__data">23 декабря 2022</p>
                         </div>
-                        <a href=""><img src="./images/google.png" alt="Гугл"></a>
+                        <a href="" class="google"><img src="./images/google.png" alt="Гугл"></a>
                     </div>
-                    <p>
+                    <p class="reviews__text">
                         Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро
                         заполнить макеты или прототипы содержимым...
-                        <a href="">Читать дальше</a>
+                        <a href="" class="reviews__text_link">Читать дальше</a>
                     </p>
                 </div>
-                <div class="container">
-                    <div>
-                        <img src="./images/Daria.png" alt="Дарья">
-                        <div>
-                            <h3>Дарья Достоевская</h3>
-                            <p>23 декабря 2022</p>
+                <div class="reviews">
+                    <div class="reviews__profile">
+                        <img class="img-person" src="./images/Daria.png" alt="Дарья">
+                        <div class="profile">
+                            <h3 class="profile__name">Дарья <br> Достоевская</h3>
+                            <p class="profile__data">23 декабря 2022</p>
                         </div>
-                        <a href=""><img src="./images/google.png" alt="Гугл"></a>
+                        <a href="" class="google"><img src="./images/google.png" alt="Гугл"></a>
                     </div>
-                    <p>
+                    <p class="reviews__text">
                         Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро
                         заполнить макеты или прототипы содержимым...
-                        <a href="">Читать дальше</a>
+                        <a href="" class="reviews__text_link">Читать дальше</a>
                     </p>
                 </div>
-                <a href=""><img src="./images/right.png" alt="Вправо"></a>
+                <a href="" class="slider__link slider__link_right"><img src="./images/right.png" alt="Вправо"></a>
             </div>
         </section>
 
@@ -1127,7 +1172,7 @@
         </section>
 
         <section class="twelfth-main-section">
-            <div class="wrapper">
+            <div>
                 <div class="container">
                     <h2>
                         Если у вас уже есть смета на строительство
@@ -1216,23 +1261,41 @@
             </div>
             <div class="map">
                 <h4>Приезжайте к нам в офис</h4>
-                <iframe
+                <!-- <iframe
                     src="https://yandex.ru/map-widget/v1/?um=constructor%3A554fc36ada0ff31751e5cb3913eeaebabfea3caa7506db060152bc159ab58086&amp;source=constructor"
-                    width="730" height="270" frameborder="0"></iframe>
+                    width="730" height="270" frameborder="0"></iframe> -->
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="footer">
         <nav>
-            <a href="">ПРОЕКТЫ <img src="./images/down-header.png" alt="Вниз"></a>
-            <a href="">ФОТО РАБОТ</a>
-            <a href="">АКЦИИ</a>
-            <a href="">УСЛУГИ <img src="./images/down-header.png" alt="Вниз"></a>
-            <a href="">ЗАКАЗЧИКУ <img src="./images/down-header.png" alt="Вниз"></a>
-            <a href="">КОНТАКТЫ</a>
-            <a href=""><img src="./images/heart.png" alt="Сердце"> ИЗБРАННОЕ</a>
-            <a href=""><img src="./images/magnifier.png" alt="Лупа"> ПОИСК</a>
+            <ul>
+                <li>
+                    <a href=""><span>ПРОЕКТЫ</span><img src="./images/down-header.png" alt="Вниз"></a>
+                </li>
+                <li>
+                    <a href=""><span>ФОТО РАБОТ</span></a>
+                </li>
+                <li>
+                    <a href=""><span>АКЦИИ</span></a>
+                </li>
+                <li>
+                    <a href=""><span>УСЛУГИ</span><img src="./images/down-header.png" alt="Вниз"></a>
+                </li>
+                <li>
+                    <a href=""><span>ЗАКАЗЧИКУ</span><img src="./images/down-header.png" alt="Вниз"></a>
+                </li>
+                <li>
+                    <a href=""><span>КОНТАКТЫ</span></a>
+                </li>
+                <li>
+                    <a href=""><img src="./images/heart.png" alt="Сердце"><span>ИЗБРАННОЕ</span></a>
+                </li>
+                <li>
+                    <a href=""><img src="./images/magnifier.png" alt="Лупа"><span>ПОИСК</span></a>
+                </li>
+            </ul>
         </nav>
         <div>
             <p>Все права защищены</p>

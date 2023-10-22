@@ -23,7 +23,7 @@
     position: relative;
     top: 0;
     left: 0;
-    min-width: 1440px;
+    min-width: 1106px;
     height: 803px;
     background-image: url(./images/tree-4.png), url(./images/home-1.png);
     background-repeat: no-repeat, no-repeat;
@@ -33,12 +33,12 @@
 }
 
 .main {
-    width: 1105px;
+    width: 1106px;
     margin: 0 auto;
 }
 
 .footer {
-    min-width: 1440px;
+    min-width: 1106px;
     position: relative;
     left: 0;
     bottom: 0;
@@ -259,7 +259,7 @@
 }
 
 .nav-list__item_mr {
-    margin: 0 0 0 20px;
+    margin: 0 0 0 5px;
 }
 
 .nav-list__item_active {

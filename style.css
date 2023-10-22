@@ -23,7 +23,7 @@
     position: relative;
     top: 0;
     left: 0;
-    min-width: 1106px;
+    min-width: 1160px;
     height: 803px;
     background-image: url(./images/tree-4.png), url(./images/home-1.png);
     background-repeat: no-repeat, no-repeat;
@@ -33,12 +33,12 @@
 }
 
 .main {
-    width: 1106px;
+    width: 1160px;
     margin: 0 auto;
 }
 
 .footer {
-    min-width: 1106px;
+    min-width: 1160px;
     position: relative;
     left: 0;
     bottom: 0;
@@ -48,7 +48,7 @@
 
 .second-main-section {
     width: 1106px;
-    margin-bottom: calc(120px - 29px);
+    margin: 0 auto calc(120px - 29px);
 }
 
 .second-main-section__title {
@@ -96,6 +96,16 @@
     padding: 45px 39px 45px 44px;
 }
 
+.card_bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #00000080;
+    z-index: 0;
+}
+
 .card_bg1 {
     background-image: url(images/home-10.jpg);
 }
@@ -118,16 +128,6 @@
 
 .card_bg6 {
     background-image: url(images/home-9.jpg);
-}
-
-.card_bg {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background-color: #00000080;
-    z-index: 0;
 }
 
 .card__title {
@@ -220,6 +220,7 @@
 
 .third-main-section {
     width: 1106px;
+    margin: 0 auto;
 }
 
 .third-main-section__title {
@@ -265,11 +266,6 @@
 .nav-list__item_active {
     background-color: #73B918;
     color: #FFFFFF;
-}
-
-.card-wrapper__str {
-    font-size: 13px;
-    line-height: 1;
 }
 
 .nav-list__link {
@@ -444,10 +440,9 @@
     margin: 0;
 }
 
-
 .ninth-main-section {
     width: 1106px;
-    margin-bottom: 223px;
+    margin: 0 auto 223px;
 }
 
 .ninth-main-section__title {
@@ -469,8 +464,8 @@
 
 .slider__link {
     position: absolute;
-    width: 11px;
-    height: 20px;
+    width: 7px;
+    height: 13px;
     top: 50%;
 }
 
@@ -502,21 +497,15 @@
     position: relative;
 }
 
+.img-person {
+    margin-bottom: 11px;
+}
+
 .profile {
     display: inline-block;
     font-size: 13px;
     vertical-align: top;
     margin-left: 20px;
-}
-
-.google {
-    position: absolute;
-    top: 0;
-    right: 4px;
-}
-
-.img-person {
-    margin-bottom: 11px;
 }
 
 .profile__name {
@@ -532,6 +521,12 @@
     color: #6D7176;
     font-weight: 400;
     line-height: 1;
+}
+
+.google {
+    position: absolute;
+    top: 0;
+    right: 4px;
 }
 
 .reviews__text {

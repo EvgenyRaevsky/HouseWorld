@@ -102,7 +102,7 @@
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: #00000080;
+    background-color: #00000070;
     z-index: 0;
 }
 
@@ -178,6 +178,7 @@
     bottom: 22px;
     line-height: 1;
     z-index: 1;
+    margin: 0;
 }
 
 .card__price_long {

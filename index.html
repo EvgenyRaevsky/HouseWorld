@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style/style.css">
     <title>House World</title>
 </head>
 
-<body class="wrapper">
+<body>
     <header class="header">
         <div class="container">
             <article class="content">
@@ -201,22 +201,24 @@
                 <span class="second-main-section__title_normal">с учетом всех особенностей Курска</span>
             </h1>
             <div class="card-wrapper">
-                <div class="card-wrapper__col">
+                <div class="card-wrapper__col card-wrapper__col_mr-right card-wrapper__col_mr-left">
                     <article class="card card_long card_bg1">
                         <div class="card_bg"></div>
                         <p class="card__title card__title_long">Каркасные дома</p>
-                        <p class="card__tag card__tag_long">100+ проектов</p>
-                        <p class="card__price card__price_long">
-                            от
-                            <span class="card__price_bold card__price_bold-long">21 800</span>
-                            руб/м
-                        </p>
-                        <button class="card__btn card__btn_long">СМОТРЕТЬ ПРОЕКТЫ</button>
+                        <p class="card__tag card__tag_long"><span class="card__tag-span">100+ проектов</span></p>
+                        <div class="card__price-block">
+                            <p class="card__price card__price_long">
+                                от
+                                <span class="card__price_bold card__price_bold-long">21 800</span>
+                                руб/м
+                            </p>
+                            <button class="card__btn card__btn_long">СМОТРЕТЬ ПРОЕКТЫ</button>
+                        </div>
                     </article>
                     <article class="card card_bg2">
                         <div class="card_bg"></div>
                         <p class="card__title">Перевозные бани</p>
-                        <p class="card__tag">100+ проектов</p>
+                        <p class="card__tag"><span class="card__tag-span">100+ проектов</span></p>
                         <p class="card__price">
                             от
                             <span class="card__price_bold">19 700</span>
@@ -225,11 +227,11 @@
                         <button class="card__btn">СМОТРЕТЬ ПРОЕКТЫ</button>
                     </article>
                 </div>
-                <div class="card-wrapper__col card-wrapper__col_mr-inline">
+                <div class="card-wrapper__col card-wrapper__col_mr-right">
                     <article class="card card_bg3">
                         <div class="card_bg"></div>
                         <p class="card__title">Дома из бруса</p>
-                        <p class="card__tag">100+ проектов</p>
+                        <p class="card__tag"><span class="card__tag-span">100+ проектов</span></p>
                         <p class="card__price">
                             от
                             <span class="card__price_bold">19 700</span>
@@ -240,7 +242,7 @@
                     <article class="card card_bg4">
                         <div class="card_bg"></div>
                         <p class="card__title">Бани из бруса</p>
-                        <p class="card__tag">100+ проектов</p>
+                        <p class="card__tag"><span class="card__tag-span">100+ проектов</span></p>
                         <p class="card__price">
                             от
                             <span class="card__price_bold">19 700</span>
@@ -251,7 +253,7 @@
                     <article class="card card_bg5">
                         <div class="card_bg"></div>
                         <p class="card__title">Срубы под усадку</p>
-                        <p class="card__tag">100+ проектов</p>
+                        <p class="card__tag"><span class="card__tag-span">100+ проектов</span></p>
                         <p class="card__price">
                             от
                             <span class="card__price_bold">19 700</span>
@@ -260,11 +262,11 @@
                         <button class="card__btn">СМОТРЕТЬ ПРОЕКТЫ</button>
                     </article>
                 </div>
-                <div class="card-wrapper__col">
+                <div class="card-wrapper__col card-wrapper__col_mr-right">
                     <article class="card card_bg6">
                         <div class="card_bg"></div>
                         <p class="card__title">Срубы под усадку</p>
-                        <p class="card__tag">100+ проектов</p>
+                        <p class="card__tag"><span class="card__tag-span">100+ проектов</span></p>
                         <p class="card__price">
                             от
                             <span class="card__price_bold">19 700</span>
@@ -275,13 +277,15 @@
                     <article class="card card_long card_bg1">
                         <div class="card_bg"></div>
                         <p class="card__title card__title_long">Каркасные бани</p>
-                        <p class="card__tag card__tag_long">100+ проектов</p>
-                        <p class="card__price card__price_long">
-                            от
-                            <span class="card__price_bold card__price_bold-long">20 800</span>
-                            руб/м
-                        </p>
-                        <button class="card__btn card__btn_long">СМОТРЕТЬ ПРОЕКТЫ</button>
+                        <p class="card__tag card__tag_long"><span class="card__tag-span">100+ проектов</span></p>
+                        <div class="card__price-block">
+                            <p class="card__price card__price_long">
+                                от
+                                <span class="card__price_bold card__price_bold-long">20 800</span>
+                                руб/м
+                            </p>
+                            <button class="card__btn card__btn_long">СМОТРЕТЬ ПРОЕКТЫ</button>
+                        </div>
                     </article>
                 </div>
             </div>
@@ -293,7 +297,8 @@
                 <nav class="nav-list">
                     <ul class="nav-list__menu">
                         <li class="nav-list__item nav-list__item_bg-none">
-                            <a href="" class="nav-list__link"><img class="nav-list__link-img" src="./images/left.png" alt="Влево"></a>
+                            <a href="" class="nav-list__link"><img class="nav-list__link-img" src="./images/left.png"
+                                    alt="Влево"></a>
                         </li>
                         <li class="nav-list__item">
                             <a href="" class="nav-list__link">Одноэтажный</a>
@@ -317,7 +322,8 @@
                             <a href="" class="nav-list__link">С гаражом</a>
                         </li>
                         <li class="nav-list__item nav-list__item_bg-none">
-                            <a href="" class="nav-list__link"><img class="nav-list__link-img" src="./images/right.png" alt="Вправо"></a>
+                            <a href="" class="nav-list__link"><img class="nav-list__link-img" src="./images/right.png"
+                                    alt="Вправо"></a>
                         </li>
                         <li class="nav-list__item nav-list__item_bg-none nav-list__item_mr">
                             <a href="" class="nav-list__link nav-list__link_yellow">Смотреть все</a>
@@ -352,16 +358,24 @@
                         </div>
                         <ul class="cell__main">
                             <li class="cell__item">
-                                <p class="cell__item_circle"></p>
-                                Тип дома:
-                                <span class="cell__item_dark">Каркасный</span>
+                                <div class="cell__item-box">
+                                    <div class="cell__item-wrap">
+                                        <p class="cell__item_circle"></p>
+                                        Тип дома:
+                                    </div>
+                                    <span class="cell__item_dark">Каркасный</span>
+                                </div>
                             </li>
                             <li class="cell__item">
-                                <p class="cell__item_circle"></p>
-                                Стоимость:
-                                <span class="cell__item_dark cell__item_dark-right">от</span>
-                                <span class="cell__item_green">1 780 000</span>
-                                <span class="cell__item_dark">руб</span>
+                                <div class="cell__item-cont">
+                                    <p class="cell__item_circle"></p>
+                                    Стоимость:
+                                </div>
+                                <div class="cell__item-block">
+                                    <span class="cell__item_dark cell__item_dark-right">от</span>
+                                    <span class="cell__item_green">1 780 000</span>
+                                    <span class="cell__item_dark">руб</span>
+                                </div>
                             </li>
                         </ul>
                         <div class="cell__footer">
@@ -371,7 +385,7 @@
                             </button>
                             <div class="cell__diamant">
                                 <img class="cell__diamant_img" src="./images/ok.png" alt="Галочка">
-                                <p class="cell__diamant_text">Индивидуальная планировка дома</p>
+                                <p class="cell__diamant_text">Индивидуальная <br> планировка дома</p>
                             </div>
                         </div>
                     </article>
@@ -402,16 +416,24 @@
                         </div>
                         <ul class="cell__main">
                             <li class="cell__item">
-                                <p class="cell__item_circle"></p>
-                                Тип дома:
-                                <span class="cell__item_dark">Каркасный</span>
+                                <div class="cell__item-box">
+                                    <div class="cell__item-wrap">
+                                        <p class="cell__item_circle"></p>
+                                        Тип дома:
+                                    </div>
+                                    <span class="cell__item_dark">Каркасный</span>
+                                </div>
                             </li>
                             <li class="cell__item">
-                                <p class="cell__item_circle"></p>
-                                Стоимость:
-                                <span class="cell__item_dark cell__item_dark-right">от</span>
-                                <span class="cell__item_green">1 780 000</span>
-                                <span class="cell__item_dark">руб</span>
+                                <div class="cell__item-cont">
+                                    <p class="cell__item_circle"></p>
+                                    Стоимость:
+                                </div>
+                                <div class="cell__item-block">
+                                    <span class="cell__item_dark cell__item_dark-right">от</span>
+                                    <span class="cell__item_green">1 780 000</span>
+                                    <span class="cell__item_dark">руб</span>
+                                </div>
                             </li>
                         </ul>
                         <div class="cell__footer">
@@ -421,7 +443,7 @@
                             </button>
                             <div class="cell__diamant">
                                 <img class="cell__diamant_img" src="./images/ok.png" alt="Галочка">
-                                <p class="cell__diamant_text">Индивидуальная планировка дома</p>
+                                <p class="cell__diamant_text">Индивидуальная <br> планировка дома</p>
                             </div>
                         </div>
                     </article>
@@ -452,16 +474,24 @@
                         </div>
                         <ul class="cell__main">
                             <li class="cell__item">
-                                <p class="cell__item_circle"></p>
-                                Тип дома:
-                                <span class="cell__item_dark">Каркасный</span>
+                                <div class="cell__item-box">
+                                    <div class="cell__item-wrap">
+                                        <p class="cell__item_circle"></p>
+                                        Тип дома:
+                                    </div>
+                                    <span class="cell__item_dark">Каркасный</span>
+                                </div>
                             </li>
                             <li class="cell__item">
-                                <p class="cell__item_circle"></p>
-                                Стоимость:
-                                <span class="cell__item_dark cell__item_dark-right">от</span>
-                                <span class="cell__item_green">1 780 000</span>
-                                <span class="cell__item_dark">руб</span>
+                                <div class="cell__item-cont">
+                                    <p class="cell__item_circle"></p>
+                                    Стоимость:
+                                </div>
+                                <div class="cell__item-block">
+                                    <span class="cell__item_dark cell__item_dark-right">от</span>
+                                    <span class="cell__item_green">1 780 000</span>
+                                    <span class="cell__item_dark">руб</span>
+                                </div>
                             </li>
                         </ul>
                         <div class="cell__footer">
@@ -471,7 +501,7 @@
                             </button>
                             <div class="cell__diamant">
                                 <img class="cell__diamant_img" src="./images/ok.png" alt="Галочка">
-                                <p class="cell__diamant_text">Индивидуальная планировка дома</p>
+                                <p class="cell__diamant_text">Индивидуальная <br> планировка дома</p>
                             </div>
                         </div>
                     </article>
@@ -504,16 +534,24 @@
                         </div>
                         <ul class="cell__main">
                             <li class="cell__item">
-                                <p class="cell__item_circle"></p>
-                                Тип дома:
-                                <span class="cell__item_dark">Каркасный</span>
+                                <div class="cell__item-box">
+                                    <div class="cell__item-wrap">
+                                        <p class="cell__item_circle"></p>
+                                        Тип дома:
+                                    </div>
+                                    <span class="cell__item_dark">Каркасный</span>
+                                </div>
                             </li>
                             <li class="cell__item">
-                                <p class="cell__item_circle"></p>
-                                Стоимость:
-                                <span class="cell__item_dark cell__item_dark-right">от</span>
-                                <span class="cell__item_green">1 780 000</span>
-                                <span class="cell__item_dark">руб</span>
+                                <div class="cell__item-cont">
+                                    <p class="cell__item_circle"></p>
+                                    Стоимость:
+                                </div>
+                                <div class="cell__item-block">
+                                    <span class="cell__item_dark cell__item_dark-right">от</span>
+                                    <span class="cell__item_green">1 780 000</span>
+                                    <span class="cell__item_dark">руб</span>
+                                </div>
                             </li>
                         </ul>
                         <div class="cell__footer">
@@ -523,7 +561,7 @@
                             </button>
                             <div class="cell__diamant">
                                 <img class="cell__diamant_img" src="./images/ok.png" alt="Галочка">
-                                <p class="cell__diamant_text">Индивидуальная планировка дома</p>
+                                <p class="cell__diamant_text">Индивидуальная <br> планировка дома</p>
                             </div>
                         </div>
                     </article>
@@ -554,16 +592,24 @@
                         </div>
                         <ul class="cell__main">
                             <li class="cell__item">
-                                <p class="cell__item_circle"></p>
-                                Тип дома:
-                                <span class="cell__item_dark">Каркасный</span>
+                                <div class="cell__item-box">
+                                    <div class="cell__item-wrap">
+                                        <p class="cell__item_circle"></p>
+                                        Тип дома:
+                                    </div>
+                                    <span class="cell__item_dark">Каркасный</span>
+                                </div>
                             </li>
                             <li class="cell__item">
-                                <p class="cell__item_circle"></p>
-                                Стоимость:
-                                <span class="cell__item_dark cell__item_dark-right">от</span>
-                                <span class="cell__item_green">1 780 000</span>
-                                <span class="cell__item_dark">руб</span>
+                                <div class="cell__item-cont">
+                                    <p class="cell__item_circle"></p>
+                                    Стоимость:
+                                </div>
+                                <div class="cell__item-block">
+                                    <span class="cell__item_dark cell__item_dark-right">от</span>
+                                    <span class="cell__item_green">1 780 000</span>
+                                    <span class="cell__item_dark">руб</span>
+                                </div>
                             </li>
                         </ul>
                         <div class="cell__footer">
@@ -573,7 +619,7 @@
                             </button>
                             <div class="cell__diamant">
                                 <img class="cell__diamant_img" src="./images/ok.png" alt="Галочка">
-                                <p class="cell__diamant_text">Индивидуальная планировка дома</p>
+                                <p class="cell__diamant_text">Индивидуальная <br> планировка дома</p>
                             </div>
                         </div>
                     </article>
@@ -604,16 +650,24 @@
                         </div>
                         <ul class="cell__main">
                             <li class="cell__item">
-                                <p class="cell__item_circle"></p>
-                                Тип дома:
-                                <span class="cell__item_dark">Каркасный</span>
+                                <div class="cell__item-box">
+                                    <div class="cell__item-wrap">
+                                        <p class="cell__item_circle"></p>
+                                        Тип дома:
+                                    </div>
+                                    <span class="cell__item_dark">Каркасный</span>
+                                </div>
                             </li>
                             <li class="cell__item">
-                                <p class="cell__item_circle"></p>
-                                Стоимость:
-                                <span class="cell__item_dark cell__item_dark-right">от</span>
-                                <span class="cell__item_green">1 780 000</span>
-                                <span class="cell__item_dark">руб</span>
+                                <div class="cell__item-cont">
+                                    <p class="cell__item_circle"></p>
+                                    Стоимость:
+                                </div>
+                                <div class="cell__item-block">
+                                    <span class="cell__item_dark cell__item_dark-right">от</span>
+                                    <span class="cell__item_green">1 780 000</span>
+                                    <span class="cell__item_dark">руб</span>
+                                </div>
                             </li>
                         </ul>
                         <div class="cell__footer">
@@ -623,7 +677,7 @@
                             </button>
                             <div class="cell__diamant">
                                 <img class="cell__diamant_img" src="./images/ok.png" alt="Галочка">
-                                <p class="cell__diamant_text">Индивидуальная планировка дома</p>
+                                <p class="cell__diamant_text">Индивидуальная <br> планировка дома</p>
                             </div>
                         </div>
                     </article>
@@ -661,7 +715,7 @@
                     </ul>
                 </nav>
                 <div class="container">
-                    <img src="./images/coordinationWithClients.png" alt="Согласование проекта">
+                    <!-- <img src="./images/coordinationWithClients.png" alt="Согласование проекта"> -->
                     <div class="content">
                         <article>
                             <img src="./images/timer.png" alt="Таймер">
@@ -718,55 +772,49 @@
         </section>
 
         <section class="fifth-main-section">
-            <h1>
+            <h1 class="fifth-main-section__title">
                 Акции и подарки
-                <span>для каждой семьи</span>
+                <span class="fifth-main-section__title_normal">для каждой семьи</span>
             </h1>
-            <div class="container">
-                <article class="content">
-                    <a href="" class="left"><img src="./images/left.png" alt="Влево"></a>
-                    <div>
-                        <h4>Любая перепланировка в подарок!</h4>
-                        <p>
-                            <span>Рыбатекст</span>
-                            используется дизайнерами,
-                            <span>проектировщиками</span>
-                            и фронтендерами, когда нужно быстро заполнить
-                            <span>макеты</span>
-                            или прототипы содержимым.
-                        </p>
-                        <button>ПЕРЕЙТИ К АКЦИИ</button>
-                    </div>
+            <div class="sale-wrapper">
+                <a href="" class="sale-wrapper__left">
+                    <img class="sale-wrapper__left-img" src="./images/left.png" alt="Влево">
+                </a>
+                <article class="sale-card sale-card_one sale-card_mr">
+                    <h4 class="sale-card__title">Любая перепланировка <br> в подарок!</h4>
+                    <p class="sale-card__description">
+                        <span class="sale-card__description_bold">Рыбатекст</span>
+                        используется дизайнерами,
+                        <span class="sale-card__description_bold">проектировщиками</span>
+                        и фронтендерами, когда нужно быстро заполнить
+                        <span class="sale-card__description_bold">макеты</span>
+                        или прототипы содержимым.
+                    </p>
+                    <button class="sale-card__btn">ПЕРЕЙТИ К АКЦИИ</button>
                 </article>
-                <article class="content">
-                    <div>
-                        <h4>Металлическая <br> дверь в подарок!</h4>
-                        <p>
-                            <span>Рыбатекст</span>
-                            используется дизайнерами,
-                            <span>проектировщиками</span>
-                            и фронтендерами, когда нужно быстро заполнить
-                            <span>макеты</span>
-                            или прототипы содержимым.
-                        </p>
-                        <button>ПЕРЕЙТИ К АКЦИИ</button>
-                    </div>
-                    <a href="" class="right"><img src="./images/right.png" alt="Вправо"></a>
-                    <div class="sale">
-                        <img src="./images/ellipse.png" alt="Солнце">
-                        <div>
-                            <span>15</span>
-                            <span>%</span>
-                            <p>СКИДКА</p>
+                <article class="sale-card sale-card_two">
+                    <h4 class="sale-card__title">Металлическая <br> дверь в подарок!</h4>
+                    <p class="sale-card__description">
+                        <span class="sale-card__description_bold">Рыбатекст</span>
+                        используется дизайнерами,
+                        <span class="sale-card__description_bold">проектировщиками</span>
+                        и фронтендерами, когда нужно быстро заполнить
+                        <span class="sale-card__description_bold">макеты</span>
+                        или прототипы содержимым.
+                    </p>
+                    <button class="sale-card__btn">ПЕРЕЙТИ К АКЦИИ</button>
+                    <div class="sale-card__label">
+                        <img class="sale-card__label-img" src="./images/ellipse.png" alt="Солнце">
+                        <div class="sale-card__label-text">
+                            <span class="sale-card__label-text_bold">15</span>
+                            <span class="sale-card__label-text_small">%</span>
+                            <p class="sale-card__label-text_thin">СКИДКА</p>
                         </div>
                     </div>
                 </article>
-            </div>
-            <div class="slider">
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
+                <a href="" class="sale-wrapper__right">
+                    <img class="sale-wrapper__right-img" src="./images/right.png" alt="Вправо">
+                </a>
             </div>
         </section>
 
@@ -777,7 +825,7 @@
             </h1>
             <div>
                 <div class="block-images">
-                    <img src="./images/home-12.png" alt="Дом">
+                    <!-- <img src="./images/home-12.png" alt="Дом"> -->
                     <div>
                         <!-- <img src="./images/home-11.jpg" alt="Дом">
                         <img src="./images/home-11.jpg" alt="Дом">
@@ -953,60 +1001,72 @@
                 <span class="ninth-main-section__title_normal">от наших клиентов</span>
             </h1>
             <div class="slider">
-                <a href="" class="slider__link slider__link_left"><img src="./images/left.png" alt="Влево"></a>
-                <div class="reviews">
-                    <div class="reviews__profile">
-                        <img class="img-person" src="./images/Daria.png" alt="Дарья">
-                        <div class="profile">
-                            <h3 class="profile__name">Дарья <br> Достоевская</h3>
-                            <p class="profile__data">23 декабря 2022</p>
+                <a href="" class="slider__link slider__link_left">
+                    <img class="slider__link-img" src="./images/left.png" alt="Влево">
+                </a>
+                <div class="slider-content">
+                    <div class="reviews reviews_mr">
+                        <div class="reviews__profile">
+                            <div class="reviews__block">
+                                <img class="reviews__person" src="./images/Daria.png" alt="Дарья">
+                                <div class="reviews__info">
+                                    <h3 class="reviews__name">Дарья <br> Достоевская</h3>
+                                    <p class="reviews__data">23 декабря 2022</p>
+                                </div>
+                            </div>
+                            <a href="" class="reviews__google"><img src="./images/google.png" alt="Гугл"></a>
                         </div>
-                        <a href="" class="google"><img src="./images/google.png" alt="Гугл"></a>
+                        <p class="reviews__text">
+                            Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро
+                            заполнить макеты или прототипы содержимым...
+                            <a href="" class="reviews__text_link">Читать дальше</a>
+                        </p>
                     </div>
-                    <p class="reviews__text">
-                        Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро
-                        заполнить макеты или прототипы содержимым...
-                        <a href="" class="reviews__text_link">Читать дальше</a>
-                    </p>
-                </div>
-                <div class="reviews reviews_mr-inline">
-                    <div class="reviews__profile">
-                        <img class="img-person" src="./images/Evgeny.png" alt="Евгений">
-                        <div class="profile">
-                            <h3 class="profile__name">Евгений <br> Маяковский</h3>
-                            <p class="profile__data">23 декабря 2022</p>
+                    <div class="reviews reviews_mr">
+                        <div class="reviews__profile">
+                            <div class="reviews__block">
+                                <img class="reviews__person" src="./images/Evgeny.png" alt="Евгений">
+                                <div class="reviews__info">
+                                    <h3 class="reviews__name">Евгений <br> Маяковский</h3>
+                                    <p class="reviews__data">23 декабря 2022</p>
+                                </div>
+                            </div>
+                            <a href="" class="reviews__google"><img src="./images/google.png" alt="Гугл"></a>
                         </div>
-                        <a href="" class="google"><img src="./images/google.png" alt="Гугл"></a>
+                        <p class="reviews__text">
+                            Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро
+                            заполнить макеты или прототипы содержимым...
+                            <a href="" class="reviews__text_link">Читать дальше</a>
+                        </p>
                     </div>
-                    <p class="reviews__text">
-                        Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро
-                        заполнить макеты или прототипы содержимым...
-                        <a href="" class="reviews__text_link">Читать дальше</a>
-                    </p>
-                </div>
-                <div class="reviews">
-                    <div class="reviews__profile">
-                        <img class="img-person" src="./images/Daria.png" alt="Дарья">
-                        <div class="profile">
-                            <h3 class="profile__name">Дарья <br> Достоевская</h3>
-                            <p class="profile__data">23 декабря 2022</p>
+                    <div class="reviews">
+                        <div class="reviews__profile">
+                            <div class="reviews__block">
+                                <img class="reviews__person" src="./images/Daria.png" alt="Дарья">
+                                <div class="reviews__info">
+                                    <h3 class="reviews__name">Дарья <br> Достоевская</h3>
+                                    <p class="reviews__data">23 декабря 2022</p>
+                                </div>
+                            </div>
+                            <a href="" class="reviews__google"><img src="./images/google.png" alt="Гугл"></a>
                         </div>
-                        <a href="" class="google"><img src="./images/google.png" alt="Гугл"></a>
+                        <p class="reviews__text">
+                            Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро
+                            заполнить макеты или прототипы содержимым...
+                            <a href="" class="reviews__text_link">Читать дальше</a>
+                        </p>
                     </div>
-                    <p class="reviews__text">
-                        Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро
-                        заполнить макеты или прототипы содержимым...
-                        <a href="" class="reviews__text_link">Читать дальше</a>
-                    </p>
                 </div>
-                <a href="" class="slider__link slider__link_right"><img src="./images/right.png" alt="Вправо"></a>
+                <a href="" class="slider__link slider__link_right">
+                    <img class="slider__link-img" src="./images/right.png" alt="Вправо">
+                </a>
             </div>
         </section>
 
         <section class="tenth-main-section">
             <div>
-                <img src="./images/tree-2.png" alt="Дерево">
-                <img src="./images/director.png" alt="Директор">
+                <!-- <img src="./images/tree-2.png" alt="Дерево"> -->
+                <!-- <img src="./images/director.png" alt="Директор"> -->
             </div>
             <div class="container">
                 <h1>
@@ -1052,118 +1112,130 @@
         </section>
 
         <section class="eleventh-main-section">
-            <div class="container">
-                <h1>
-                    <span>Мы готовы ответить на</span>
+            <div class="left-block">
+                <h1 class="left-block__title">
+                    <span class="left-block__title_normal">Мы готовы ответить на</span>
                     любой вопрос
                 </h1>
-                <p>
+                <p class="left-block__text">
                     Рыбатекст используется дизайнерами,
-                    <span>проектировщиками</span>
+                    <span class="left-block__text_bold">проектировщиками</span>
                     и фронтендерами, когда нужно быстро заполнить
-                    <span>макеты</span>
+                    <span class="left-block__text_bold">макеты</span>
                     или прототипы содержимым.
                 </p>
             </div>
-            <div class="container">
-                <article class="content">
-                    <div>
-                        <img src="./images/down.png" alt="Вниз">
-                        <p>Возможна ли разработка индивидуального проекта?</p>
+            <div class="right-block">
+                <article class="droplist">
+                    <div class="droplist-name">
+                        <div class="droplist-name-img">
+                            <img class="droplist-name-img__icon" src="./images/down.png" alt="Вниз">
+                        </div>
+                        <p class="droplist-name__title">Возможна ли разработка индивидуального проекта?</p>
                     </div>
-                    <div>
-                        <p>
+                    <div class="droplist-text">
+                        <p class="droplist-text__description">
                             Рыбатекст используется дизайнерами,
-                            <span>проектировщиками</span>
+                            <span class="droplist-text__description_bold">проектировщиками</span>
                             и фронтендерами, когда нужно выстро заполнить
-                            <span>макеты</span>
+                            <span class="droplist-text__description_bold">макеты</span>
                             или прототипы содержимым. Рыбатекст используется дизайнерами,
-                            <span>проектировщиками</span>
+                            <span class="droplist-text__description_bold">проектировщиками</span>
                             и фронтендерами
                         </p>
                     </div>
                 </article>
-                <article class="content">
-                    <div>
-                        <img src="./images/up.png" alt="Вверх">
-                        <p>Возможна ли разработка индивидуального проекта?</p>
+                <article class="droplist droplist_active">
+                    <div class="droplist-name">
+                        <div class="droplist-name-img">
+                            <img class="droplist-name-img__icon" src="./images/down.png" alt="Вниз">
+                        </div>
+                        <p class="droplist-name__title">Возможна ли разработка индивидуального проекта?</p>
                     </div>
-                    <div>
-                        <p>
+                    <div class="droplist-text">
+                        <p class="droplist-text__description">
                             Рыбатекст используется дизайнерами,
-                            <span>проектировщиками</span>
+                            <span class="droplist-text__description_bold">проектировщиками</span>
                             и фронтендерами, когда нужно выстро заполнить
-                            <span>макеты</span>
+                            <span class="droplist-text__description_bold">макеты</span>
                             или прототипы содержимым. Рыбатекст используется дизайнерами,
-                            <span>проектировщиками</span>
+                            <span class="droplist-text__description_bold">проектировщиками</span>
                             и фронтендерами
                         </p>
                     </div>
                 </article>
-                <article class="content">
-                    <div>
-                        <img src="./images/down.png" alt="Вниз">
-                        <p>Возможна ли разработка индивидуального проекта?</p>
+                <article class="droplist">
+                    <div class="droplist-name">
+                        <div class="droplist-name-img">
+                            <img class="droplist-name-img__icon" src="./images/down.png" alt="Вниз">
+                        </div>
+                        <p class="droplist-name__title">Возможна ли разработка индивидуального проекта?</p>
                     </div>
-                    <div>
-                        <p>
+                    <div class="droplist-text">
+                        <p class="droplist-text__description">
                             Рыбатекст используется дизайнерами,
-                            <span>проектировщиками</span>
+                            <span class="droplist-text__description_bold">проектировщиками</span>
                             и фронтендерами, когда нужно выстро заполнить
-                            <span>макеты</span>
+                            <span class="droplist-text__description_bold">макеты</span>
                             или прототипы содержимым. Рыбатекст используется дизайнерами,
-                            <span>проектировщиками</span>
+                            <span class="droplist-text__description_bold">проектировщиками</span>
                             и фронтендерами
                         </p>
                     </div>
                 </article>
-                <article class="content">
-                    <div>
-                        <img src="./images/down.png" alt="Вниз">
-                        <p>Возможна ли разработка индивидуального проекта?</p>
+                <article class="droplist">
+                    <div class="droplist-name">
+                        <div class="droplist-name-img">
+                            <img class="droplist-name-img__icon" src="./images/down.png" alt="Вниз">
+                        </div>
+                        <p class="droplist-name__title">Возможна ли разработка индивидуального проекта?</p>
                     </div>
-                    <div>
-                        <p>
+                    <div class="droplist-text">
+                        <p class="droplist-text__description">
                             Рыбатекст используется дизайнерами,
-                            <span>проектировщиками</span>
+                            <span class="droplist-text__description_bold">проектировщиками</span>
                             и фронтендерами, когда нужно выстро заполнить
-                            <span>макеты</span>
+                            <span class="droplist-text__description_bold">макеты</span>
                             или прототипы содержимым. Рыбатекст используется дизайнерами,
-                            <span>проектировщиками</span>
+                            <span class="droplist-text__description_bold">проектировщиками</span>
                             и фронтендерами
                         </p>
                     </div>
                 </article>
-                <article class="content">
-                    <div>
-                        <img src="./images/down.png" alt="Вниз">
-                        <p>Возможна ли разработка индивидуального проекта?</p>
+                <article class="droplist">
+                    <div class="droplist-name">
+                        <div class="droplist-name-img">
+                            <img class="droplist-name-img__icon" src="./images/down.png" alt="Вниз">
+                        </div>
+                        <p class="droplist-name__title">Возможна ли разработка индивидуального проекта?</p>
                     </div>
-                    <div>
-                        <p>
+                    <div class="droplist-text">
+                        <p class="droplist-text__description">
                             Рыбатекст используется дизайнерами,
-                            <span>проектировщиками</span>
+                            <span class="droplist-text__description_bold">проектировщиками</span>
                             и фронтендерами, когда нужно выстро заполнить
-                            <span>макеты</span>
+                            <span class="droplist-text__description_bold">макеты</span>
                             или прототипы содержимым. Рыбатекст используется дизайнерами,
-                            <span>проектировщиками</span>
+                            <span class="droplist-text__description_bold">проектировщиками</span>
                             и фронтендерами
                         </p>
                     </div>
                 </article>
-                <article class="content">
-                    <div>
-                        <img src="./images/down.png" alt="Вниз">
-                        <p>Возможна ли разработка индивидуального проекта?</p>
+                <article class="droplist">
+                    <div class="droplist-name">
+                        <div class="droplist-name-img">
+                            <img class="droplist-name-img__icon" src="./images/down.png" alt="Вниз">
+                        </div>
+                        <p class="droplist-name__title">Возможна ли разработка индивидуального проекта?</p>
                     </div>
-                    <div>
-                        <p>
+                    <div class="droplist-text">
+                        <p class="droplist-text__description">
                             Рыбатекст используется дизайнерами,
-                            <span>проектировщиками</span>
+                            <span class="droplist-text__description_bold">проектировщиками</span>
                             и фронтендерами, когда нужно выстро заполнить
-                            <span>макеты</span>
+                            <span class="droplist-text__description_bold">макеты</span>
                             или прототипы содержимым. Рыбатекст используется дизайнерами,
-                            <span>проектировщиками</span>
+                            <span class="droplist-text__description_bold">проектировщиками</span>
                             и фронтендерами
                         </p>
                     </div>
@@ -1302,6 +1374,8 @@
             <a href="">Политика обработки персональных данных</a>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

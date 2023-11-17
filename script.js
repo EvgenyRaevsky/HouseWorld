@@ -1,8 +1,7 @@
 const droplist = document.querySelectorAll('.droplist')
 
 for (let el of droplist) {
-    el.addEventListener('click',
-        () => {
+    el.addEventListener('click', () => {
             let next = el
             droplist.forEach((el, i) => {
                 el.classList.contains('droplist_active') && el.classList.remove('droplist_active')
@@ -46,3 +45,14 @@ dropDownMenu.addEventListener('click', () => {
         }, 490)
     }
 })
+
+const calcBlock = document.querySelectorAll('.calculation-block__img')
+
+for (let el of calcBlock) {
+    el.addEventListener('click', () => {
+        calcBlock.forEach(el => {
+            el.classList.remove('calculation-block__img_active')
+        })
+        el.classList.add('calculation-block__img_active')
+    })
+}

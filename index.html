@@ -10,110 +10,139 @@
 
 <body>
     <header class="header">
-        <div class="container">
-            <article class="content">
-                <a href=""><img src="./images/logo.png" alt="Логотип компании"></a>
-                <div>
-                    <img src="./images/HOUSEWORLD.png" alt="HOUSE WORLD">
-                    <p>Дома и бани от новгородских мастеров</p>
+        <div class="blackout"></div>
+        <div class="header-wrapper">
+            <div class="header__container">
+                <article class="header__content">
+                    <a class="header__logo" href="">
+                        <img class="header__logo-img" src="./images/logo.svg" alt="Логотип компании">
+                    </a>
+                    <div class="header__slogan">
+                        <img class="header__slogan-img" src="./images/HOUSEWORLD.svg" alt="HOUSE WORLD">
+                        <p class="header__slogan-text">Дома и бани от новгородских мастеров</p>
+                    </div>
+                </article>
+                <article class="header__content">
+                    <div class="header__content-label"></div>
+                    <div class="header__content-rating">
+                        <img class="header__content-star" src="./images/star.svg" alt="Звезда">
+                        <img class="header__content-star" src="./images/star.svg" alt="Звезда">
+                        <img class="header__content-star" src="./images/star.svg" alt="Звезда">
+                        <img class="header__content-star" src="./images/star.svg" alt="Звезда">
+                        <p class="header__content-text">
+                            <span class="header__content-text_bold">Рейтинг в Google</span>
+                            на основании 180 отзывов
+                        </p>
+                    </div>
+                </article>
+                <article class="header__content">
+                    <button class="header__content-btn">
+                        <p class="header__content-btn-text">Прислать проект на расчет</p>
+                        <img class="header__content-btn-img" src="./images/calculator.svg" alt="Калькулятор">
+                    </button>
+                    <div class="header__content-email">
+                        <a class="header__content-email-link" href="">
+                            <img class="header__content-email-img" src="./images/email.svg" alt="Почта">
+                        </a>
+                        <p class="header__content-email-text">info@house.world</p>
+                    </div>
+                </article>
+                <article class="header__content">
+                    <p class="header__content-online">Мы онлайн</p>
+                    <a class="header__content-call" href="">
+                        <img src="./images/phone-1.svg" alt="Телефон">
+                    </a>
+                </article>
+                <article class="header__content">
+                    <p class="header__content-chart">Без выходных с 10:00 до 20:00</p>
+                    <p class="header__content-phone">+7 (800) 000-00-00</p>
+                    <a class="header__content-request" href="">Заказать обратный звонок</a>
+                </article>
+            </div>
+            <nav class="nav">
+                <div class="drop-down-menu">
+                    <img class="drop-down-menu__img" src="./images/down.svg" alt="Меню">
                 </div>
-            </article>
-            <article class="content">
-                <span>4,9</span>
-                <div>
-                    <img src="./images/star.png" alt="Звезда">
-                    <img src="./images/star.png" alt="Звезда">
-                    <img src="./images/star.png" alt="Звезда">
-                    <img src="./images/star.png" alt="Звезда">
-                    <p>
-                        <span>Рейтинг в Google</span>
-                        на основании 180 отзывов
-                    </p>
-                </div>
-            </article>
-            <article class="content">
-                <button>
-                    <p>Прислать проект на расчет</p>
-                    <img src="./images/calculator.png" alt="Калькулятор">
-                </button>
-                <div>
-                    <a href=""><img src="./images/email.png" alt="Почта"></a>
-                    <p>info@house.world</p>
-                </div>
-            </article>
-            <article class="content">
-                <ul>
-                    <li><span>Мы онлайн</span></li>
-                </ul>
-                <a href=""><img src="./images/phone-2.png" alt="Телефон"></a>
-            </article>
-            <article class="content">
-                <ul>
-                    <li>
-                        <span>Без выходных с 10:00 до 20:00</span>
+                <ul class="nav__menu">
+                    <li class="nav__item">
+                        <a class="nav__link" href="">
+                            <span class="nav__link-uppercase">Проекты</span>
+                            <img class="nav__link-down" src="./images/down.svg" alt="Вниз">
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="">
+                            <span class="nav__link-uppercase">Фото работ</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="">
+                            <span class="nav__link-uppercase">Акции</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="">
+                            <span class="nav__link-uppercase">Услуги</span>
+                            <img class="nav__link-down" src="./images/down.svg" alt="Вниз">
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="">
+                            <span class="nav__link-uppercase">Заказчику</span>
+                            <img class="nav__link-down" src="./images/down.svg" alt="Вниз">
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="">
+                            <span class="nav__link-uppercase">Контакты</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="">
+                            <img class="nav__link-icon" src="./images/heart.svg" alt="Сердце">
+                            <span class="nav__link-uppercase">Избранное</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="">
+                            <img class="nav__link-icon" src="./images/magnifier.svg" alt="Лупа">
+                            <span class="nav__link-uppercase">Поиск</span>
+                        </a>
                     </li>
                 </ul>
-                <span>+7 (800) 000-00-00</span>
-                <a href="">Заказать обратный звонок</a>
-            </article>
+            </nav>
+            <section class="header-section">
+                <h1 class="header-section__title">
+                    Строительство деревянных домов
+                    <span class="header-section__title_normal">под ключ в Курске</span>
+                </h1>
+                <p class="header-section__text">
+                    Построим теплый и надежный дом
+                    <span class="header-section__text_bold">с гарантией 10 лет</span>
+                </p>
+                <button class="header-section__btn">
+                    <span class="header-section__btn_uppercase">РАССЧИТАТЬ СТОИМОСТЬ</span>
+                </button>
+            </section>
+            <section class="header-section header-section_bottom">
+                <article class="header-section__content">
+                    <img class="header-section__content-icon" src="./images/brigades.png" alt="Картинка">
+                    <p class="header-section__description">40 собственных <br> опытных бригад</p>
+                </article>
+                <article class="header-section__content">
+                    <img class="header-section__content-icon" src="./images/buildingMaterials.png" alt="Картинка">
+                    <p class="header-section__description">Свое производство <br> строительных материалов</p>
+                </article>
+                <article class="header-section__content">
+                    <img class="header-section__content-icon" src="./images/customerReviews.png" alt="Картинка">
+                    <p class="header-section__description">Тысячи довольных <br> клиентов с 1998 года</p>
+                </article>
+                <article class="header-section__content">
+                    <img class="header-section__content-icon" src="./images/warranty.png" alt="Картинка">
+                    <p class="header-section__description">Гарантия на все строительные <br> работы по договору</p>
+                </article>
+            </section>
         </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href=""><span>ПРОЕКТЫ</span><img src="./images/down-header.png" alt="Вниз"></a>
-                </li>
-                <li>
-                    <a href=""><span>ФОТО РАБОТ</span></a>
-                </li>
-                <li>
-                    <a href=""><span>АКЦИИ</span></a>
-                </li>
-                <li>
-                    <a href=""><span>УСЛУГИ</span><img src="./images/down-header.png" alt="Вниз"></a>
-                </li>
-                <li>
-                    <a href=""><span>ЗАКАЗЧИКУ</span><img src="./images/down-header.png" alt="Вниз"></a>
-                </li>
-                <li>
-                    <a href=""><span>КОНТАКТЫ</span></a>
-                </li>
-                <li>
-                    <a href=""><img src="./images/heart.png" alt="Сердце"><span>ИЗБРАННОЕ</span></a>
-                </li>
-                <li>
-                    <a href=""><img src="./images/magnifier.png" alt="Лупа"><span>ПОИСК</span></a>
-                </li>
-            </ul>
-        </nav>
-        <section class="section-header">
-            <h1>
-                Строительство деревянных домов
-                <span>под ключ в Курске</span>
-            </h1>
-            <p>
-                Построим теплый и надежный дом
-                <span>с гарантией 10 лет</span>
-            </p>
-            <button><span>РАССЧИТАТЬ СТОИМОСТЬ</span></button>
-        </section>
-        <section class="section-header-bottom ">
-            <div>
-                <img src="./images/brigades.png" width="31px" alt="Картинка">
-                <p>40 собственных опытных бригад</p>
-            </div>
-            <div>
-                <img src="./images/buildingMaterials.png" width="29px" alt="Картинка">
-                <p>Свое производство строительных материалов</p>
-            </div>
-            <div>
-                <img src="./images/customerReviews.png" width="31px" alt="Картинка">
-                <p>Тысячи довольных клиентов с 1998 года</p>
-            </div>
-            <div>
-                <img src="./images/warranty.png" width="28px" alt="Картинка">
-                <p>Гарантия на все строительные работы по договору</p>
-            </div>
-        </section>
     </header>
 
     <main class="main">
@@ -940,7 +969,7 @@
                             </p>
                             <button class="calculation-block__footer-btn">
                                 Рассчитать стоимость
-                                <img class="calculation-block__footer-btn-img" src="./images/calculator.png"
+                                <img class="calculation-block__footer-btn-img" src="./images/calculator.svg"
                                     alt="Калькулятор">
                             </button>
                         </div>
@@ -1368,12 +1397,12 @@
                     <li>Пишите, мы онлайн</li>
                 </ul>
                 <div>
-                    <a href=""><img src="./images/phone-1.png" alt="Телефон"></a>
+                    <!-- <a href=""><img src="./images/phone-1.png" alt="Телефон"></a> -->
                     <a href=""><img src="./images/letter.png" alt="Почта"></a>
                 </div>
                 <button>
                     Рассчитать стоимость
-                    <img src="./images/calculator.png" alt="Калькулятор">
+                    <img src="./images/calculator.svg" alt="Калькулятор">
                 </button>
             </div>
             <div class="map">
@@ -1389,7 +1418,7 @@
         <nav>
             <ul>
                 <li>
-                    <a href=""><span>ПРОЕКТЫ</span><img src="./images/down-header.png" alt="Вниз"></a>
+                    <a href=""><span>ПРОЕКТЫ</span><img src="./images/down.svg" alt="Вниз"></a>
                 </li>
                 <li>
                     <a href=""><span>ФОТО РАБОТ</span></a>
@@ -1398,19 +1427,19 @@
                     <a href=""><span>АКЦИИ</span></a>
                 </li>
                 <li>
-                    <a href=""><span>УСЛУГИ</span><img src="./images/down-header.png" alt="Вниз"></a>
+                    <a href=""><span>УСЛУГИ</span><img src="./images/down.svg" alt="Вниз"></a>
                 </li>
                 <li>
-                    <a href=""><span>ЗАКАЗЧИКУ</span><img src="./images/down-header.png" alt="Вниз"></a>
+                    <a href=""><span>ЗАКАЗЧИКУ</span><img src="./images/down.svg" alt="Вниз"></a>
                 </li>
                 <li>
                     <a href=""><span>КОНТАКТЫ</span></a>
                 </li>
                 <li>
-                    <a href=""><img src="./images/heart.png" alt="Сердце"><span>ИЗБРАННОЕ</span></a>
+                    <a href=""><img src="./images/heart.svg" alt="Сердце"><span>ИЗБРАННОЕ</span></a>
                 </li>
                 <li>
-                    <a href=""><img src="./images/magnifier.png" alt="Лупа"><span>ПОИСК</span></a>
+                    <a href=""><img src="./images/magnifier.svg" alt="Лупа"><span>ПОИСК</span></a>
                 </li>
             </ul>
         </nav>

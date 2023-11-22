@@ -146,78 +146,91 @@
     </header>
 
     <main class="main">
-        <!-- <img src="./images/tree-1.png" alt="Дерево" class="tree"> -->
         <section class="first-main-section">
-            <div class="first-left-section">
-                <h2>
+            <div class="bg-tree"></div>
+            <div class="first-left">
+                <h2 class="first-left__title">
                     Рассчитайте предварительную стоимость
-                    <span>дома за 1 минуту</span>
+                    <span class="first-left__title_normal">дома за 1 минуту</span>
                 </h2>
-                <div class="scroll">
-                    <img src="./images/slider.png" alt="Ползунок">
+                <div class="first-left__question">
+                    <p class="first-left__question-num">01.</p>
+                    <h3 class="first-left__question-text">Что будем строить?</h3>
                 </div>
-                <div>
-                    <p>01.</p>
-                    <h3>Что будем строить?</h3>
+                <div class="first-left-wrapper">
+                    <div class="blackout"></div>
+                    <article class="first-left-container">
+                        <div class="first-left-block first-left-block_one">
+                            <img class="first-left-block__home" src="./images/home-2.png" alt="Дом">
+                            <div class="first-left-block__click first-left-block__click_on">
+                                <p class="first-left-block__check-mark first-left-block__check-mark-active">
+                                    &#10003;
+                                </p>
+                            </div>
+                            <p class="first-left-block__name">Дом</p>
+                        </div>
+                        <div class="first-left-block first-left-block_two">
+                            <img class="first-left-block__home" src="./images/home-3.png" alt="Дом">
+                            <div class="first-left-block__click first-left-block__click_off">
+                                <p class="first-left-block__check-mark">
+                                    &#10003;
+                                </p>
+                            </div>
+                            <p class="first-left-block__name">Баня</p>
+                        </div>
+                    </article>
+                    <article class="first-left-block__footer">
+                        <div class="first-left-block__footer-description">
+                            <img class="first-left-block__footer-sun" src="./images/ellipse.png" alt="Солнце">
+                            <img class="first-left-block__footer-click" src="./images/clickOn.svg" alt="Клик">
+                            <p class="first-left-block__footer-text">
+                                <span class="first-left-block__footer-text_bold">Нажмите на вариант ответа</span>
+                                и переходите к следующему вопросу
+                            </p>
+                        </div>
+                        <button class="first-left-block__btn">
+                            Далее
+                        </button>
+                    </article>
                 </div>
-                <article class="first-article-1">
-                    <div>
-                        <img src="./images/home-2.png" alt="Дом">
-                        <a href=""><img src="./images/checkMarkСolored.png" alt="Выбрано"></a>
-                        <p>Дом</p>
-                    </div>
-                    <div>
-                        <img src="./images/home-3.png" alt="Дом">
-                        <a href=""><img src="./images/checkMarkNotColored.png" alt="Не выбрано"></a>
-                        <p>Баня</p>
-                    </div>
-                </article>
-                <article class="first-article-2">
-                    <div>
-                        <img src="./images/ellipse.png" alt="Солнце">
-                        <img src="./images/clickOn.png" width="19px" alt="Клик">
-                        <p>
-                            <span>Нажмите на вариант ответа</span>
-                            и переходите к следующему вопросу
-                        </p>
-                    </div>
-                    <button>
-                        <p>Далее</p>
-                        <img src="./images/rightButton.png" alt="->">
-                        <img src="./images/rightButton.png" alt="->">
-                    </button>
-                </article>
             </div>
-            <div class="first-right-section">
-                <div><!-- For images --></div>
-                <h3>Михаил Иванов</h3>
-                <p>Ведущий архитектор</p>
-                <p>
+            <div class="drop-down-menu drop-down-menu_first">
+                <img class="drop-down-menu__img drop-down-menu__img_first" src="./images/down.svg" alt="Меню">
+            </div>
+            <div class="first-right">
+                <div class="first-right__block-img">
+                    <img class="first-right__leadArchitect-img" src="./images/leadArchitect.png"
+                        alt="Ведущий архитектор">
+                    <img class="first-right__label-img" src="./images/label.svg" alt="Ярлык">
+                </div>
+                <h3 class="first-right__name">Михаил Иванов</h3>
+                <p class="first-right__post">Ведущий архитектор</p>
+                <p class="first-right__list">
                     Ответив на вопросы
-                    <span>вы получите:</span>
+                    <span class="first-right__list_bold">вы получите:</span>
                 </p>
-                <div>
-                    <a href=""><img src="./images/open.png" width="22px" alt="Открыто"></a>
-                    <p>
+                <div class="first-right__card first-right__card_open">
+                    <img class="first-right__img" src="./images/open.svg" alt="Открыто">
+                    <p class="first-right__card-text">
                         Гарантированную
-                        <span>скидку</span>
+                        <span class="first-right__card-text_bold">скидку</span>
                     </p>
-                    <div>
-                        <p>1</p>
-                        <p>%</p>
+                    <div class="first-right__card-num">
+                        <p class="first-right__card-figure">1</p>
+                        <p class="first-right__card-percent">%</p>
                     </div>
                 </div>
-                <div>
-                    <a href=""><img src="./images/close.png" width="33px" alt="Закрыто"></a>
-                    <p>
-                        <span>Ориентировочную</span>
+                <div class="first-right__card first-right__card_close">
+                    <img class="first-right__img" src="./images/close.svg" alt="Закрыто">
+                    <p class="first-right__card-text">
+                        <span class="first-right__card-text_bold">Ориентировочную</span>
                         стоимость строительства
                     </p>
                 </div>
-                <div>
-                    <a href=""><img src="./images/close.png" width="33px" alt="Закрыто"></a>
-                    <p>
-                        <span>Точную подборку</span>
+                <div class="first-right__card first-right__card_close">
+                    <img class="first-right__img" src="./images/close.svg" alt="Закрыто">
+                    <p class="first-right__card-text">
+                        <span class="first-right__card-text_bold">Точную подборку</span>
                         проектов исходя из ваших ответов
                     </p>
                 </div>
@@ -882,7 +895,8 @@
                 </div>
                 <div class="calculation-block__wrapper">
                     <div class="calculation-block__cards">
-                        <div class="calculation-block__img calculation-block__img-1 calculation-block__img_active"></div>
+                        <div class="calculation-block__img calculation-block__img-1 calculation-block__img_active">
+                        </div>
                         <div class="calculation-block__img calculation-block__img-2"></div>
                         <div class="calculation-block__img calculation-block__img-3"></div>
                         <div class="calculation-block__img calculation-block__img-4"></div>

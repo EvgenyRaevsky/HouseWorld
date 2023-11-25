@@ -111,3 +111,25 @@ for (let el of mark) {
     el.classList.add('first-left-block__check-mark-active')
     })
 }
+
+const navItem = document.querySelectorAll('.fourth-main-section__item')
+
+for (let el of navItem) {
+    el.addEventListener('click', () => {
+        navItem.forEach(e => {
+            e.classList.remove('fourth-main-section__item_active')
+        })
+        el.classList.add('fourth-main-section__item_active')
+    })
+}
+
+const formMessenger = document.querySelectorAll('.messengers__icon')
+
+for (let el of formMessenger) {
+    el.addEventListener('click', () => {
+        formMessenger.forEach(e => {
+            e.classList.remove('messengers__icon-active')
+        })
+        el.classList.add('messengers__icon-active')
+    })
+}

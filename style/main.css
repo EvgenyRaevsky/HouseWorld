@@ -19,18 +19,6 @@
     padding: 51px 0 0 100px;
 }
 
-.bg-tree {
-    position: absolute;
-    right: -100px;
-    width: 307px;
-    height: 716px;
-    top: -160px;
-    background-image: url('../images/tree-1.png');
-    background-repeat: no-repeat;
-    background-position: 45px -20px;
-    z-index: 15;
-}
-
 .first-left {
     width: 70%;
     display: flex;
@@ -511,8 +499,8 @@
 
 .card__tag {
     display: flex;
-    width: 20%;
-    height: 2rem;
+    height: max-content;
+    padding: 8px 12px;
     font-size: .8rem;
     border-radius: 13px;
     text-align: center;
@@ -523,8 +511,7 @@
 }
 
 .card__tag_long {
-    width: 25%;
-    height: 2.5rem;
+    padding: 12px 12px;
     border-radius: 18px;
 }
 
@@ -560,10 +547,9 @@
 }
 
 .card__btn {
-    width: max-content;
     padding: 10px 20px;
     margin-top: 10px;
-    font-size: .7rem;
+    font-size: .9rem;
     font-weight: 700;
     color: #ffffff;
     background-color: #73B918;
@@ -578,7 +564,6 @@
 }
 
 .card__btn_long {
-    width: max-content;
     padding: 12px 25px;
     border-radius: 8px;
 }
@@ -610,15 +595,15 @@
     display: flex;
     list-style-type: none;
     margin-bottom: 27px;
-    gap: 10px;
+    gap: 8px;
 }
 
 .nav-list__item {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 6px 17px;
-    font-size: 1.5rem;
+    padding: 6px 15px;
+    font-size: 1.3rem;
     font-weight: 700;
     color: #5C5F66;
     background-color: #EFEFEF;
@@ -665,18 +650,19 @@
 .cell__title {
     font-size: 2.5rem;
     font-weight: 900;
-    margin: 28px 0 16px 31px;
+    margin: 18px 0 16px 28px;
 }
 
 .cell__header {
     display: flex;
     justify-content: space-between;
-    margin-left: 31px;
-    margin-right: 31px;
+    margin-left: 28px;
+    margin-right: 28px;
 }
 
 .description {
     font-size: 1rem;
+    text-wrap: nowrap;
     color: #7A7D81;
 }
 
@@ -693,7 +679,7 @@
 }
 
 .cell__main {
-    margin: 0 31px;
+    margin: 0 28px;
     padding: 0;
     color: #5C5F66;
 }
@@ -727,15 +713,10 @@
     font-weight: 600;
 }
 
-.cell__item_dark-right {
-    margin-right: 5px;
-}
-
 .cell__item_green {
     color: #73B918;
     font-size: 2.6rem;
     font-weight: 700;
-    margin-right: 5px;
 }
 
 .cell__item_circle {
@@ -749,19 +730,17 @@
 .cell__footer {
     display: flex;
     justify-content: space-between;
-    margin: 0 31px 28px;
+    margin: 0 28px 18px;
 }
 
 .cell__btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
-    height: max-content;
-    padding: 10px 15px;
+    width: max-content;
+    padding: 10px;
     text-wrap: nowrap;
-    font-family: Gilroy, sans-serif;
-    font-size: 1rem;
+    font-size: .9rem;
     font-weight: 700;
     background-color: #FEAA01;
     color: #ffffff;
@@ -796,7 +775,7 @@
 }
 
 .cell__diamant_text {
-    right: 31px;
+    right: 28px;
     text-wrap: nowrap;
 }
 
@@ -813,6 +792,7 @@
     font-size: 4rem;
     margin-bottom: 48px;
     text-align: center;
+    color: #2D2D2F;
 }
 
 .fourth-main-section__title_normal {
@@ -1231,7 +1211,8 @@
 }
 
 .calculation-block__cards {
-    width: 50%;
+    width: calc(45% - 20px);
+    margin-right: 20px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -1278,8 +1259,7 @@
 }
 
 .calculation-block__description {
-    width: calc(50% - 20px);
-    padding-left: 20px;
+    width: 55%;
 }
 
 .calculation-block__geo {
@@ -1353,9 +1333,14 @@
 }
 
 .calculation-block__main-content {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
     font-weight: 400;
+    text-wrap: nowrap;
+}
+
+.calculation-block__main-content:nth-child(1) {
+    margin-right: 15px;
 }
 
 .calculation-block__main-text {
@@ -1375,8 +1360,8 @@
 
 .calculation-block__footer-text {
     width: calc(50% - 20px);
-    font-size: 1.5rem;
-    line-height: 1.5rem;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
     font-weight: 400;
     color: #56595F;
     margin-right: 20px;
@@ -1556,11 +1541,10 @@
 
 .form__approval {
     text-align: left;
-    width: 90%;
+    width: 100%;
     color: #413E3F;
     font-size: .8rem;
     position: relative;
-    left: -5%;
 }
 
 .form__approval-link {
@@ -1782,7 +1766,7 @@
 }
 
 .left-block__title {
-    width: 80%;
+    width: 90%;
     font-size: 4rem;
     line-height: 1;
     font-weight: 700;
@@ -1976,11 +1960,6 @@
         margin-bottom: 25px;
     }
 
-    .calculation-block__description {
-        width: calc(50% - 40px);
-        padding-left: 40px;
-    }
-
     .calculation-block__geo {
         margin-bottom: 30px;
     }
@@ -2103,11 +2082,6 @@
         margin-bottom: 20px;
     }
 
-    .calculation-block__description {
-        width: calc(50% - 30px);
-        padding-left: 30px;
-    }
-
     .calculation-block__geo {
         margin-bottom: 25px;
     }
@@ -2210,6 +2184,24 @@
         width: 35%;
     }
 
+    .card__title {
+        width: 60%;
+    }
+    
+    .card__tag_long {
+        display: none;
+    }
+
+    .card__btn {
+        padding: 8px 12px;
+        font-size: .8rem;
+    }
+    
+    .card__btn_long {
+        padding: 10px 20px;
+        border-radius: 8px;
+    }
+
     .nav-list__menu {
         gap: 25px;
         overflow-x: scroll;
@@ -2230,6 +2222,20 @@
 
     .nav-list__item {
         padding: 8px 24px;
+    }
+
+    .cell__item-wrap,
+    .cell__item_dark,
+    .cell__item-cont {
+        font-size: .9rem;
+    }
+
+    .cell__diamant_img {
+        margin-right: 5px;
+    }
+
+    .cell__btn {
+        padding: 10px;
     }
 
     .fourth-main-section__item {
@@ -2330,10 +2336,6 @@
         margin-right: 30px;
     }
 
-    .bg-tree {
-        right: -10px;
-    }
-
     .first-main-section {
         left: -30px;
         top: 0;
@@ -2369,6 +2371,24 @@
 
     .first-right {
         width: 35%;
+    }
+
+    .card__title {
+        width: 60%;
+    }
+    
+    .card__tag_long {
+        display: none;
+    }
+
+    .card__btn {
+        padding: 8px 12px;
+        font-size: .8rem;
+    }
+    
+    .card__btn_long {
+        padding: 10px 20px;
+        border-radius: 8px;
     }
 
     .nav-list__menu {
@@ -2629,28 +2649,80 @@
         margin-bottom: 40px;
     }
 
+    .card-wrapper {
+        flex-wrap: wrap;
+    }
+
     .card-wrapper__col {
-        width: calc(100% / 3);
-        margin-right: 10px;
-        margin-left: 10px;
+        width: calc(100% - 100px);
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 0;
     }
 
     .card {
-        padding: 19px 23px;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
+        height: 300px;
     }
 
     .card_long {
-        height: 340px;
-        padding: 35px 30px;
+        padding: 29px 33px;
+        height: 300px;
+    }
+
+    .card__title {
+        font-size: 3.2rem;
+    }
+
+    .card__title_long {
+        font-size: 3.2rem;
+        margin-bottom: 28px;
+    }
+
+    .card__tag {
+        width: 20%;
+        padding: 12px;
+        border-radius: 30px;
+        font-size: 1.5rem;
+    }
+    
+    .card__tag_long {
+        width: 20%;
+        padding: 12px;
+        border-radius: 30px;
+        font-size: 1.5rem;
+    }
+
+    .card__price {
+        font-size: 2rem;
+    }
+
+    .card__price_bold {
+        font-size: 2rem;
+    }
+
+    .card__price_bold {
+        font-size: 2.8rem;
+    }
+
+    .card__price_bold-long {
+        font-size: 2.8rem;
+    }
+
+    .card__price-block_long {
+        display: flex;
+        flex-direction: row-reverse;
     }
 
     .card__btn {
-        padding: 8px 10px;
+        font-size: 1.5rem;   
+        padding: 12px 40px; 
     }
 
     .card__btn_long {
-        padding: 10px 20px;
+        font-size: 1.5rem;
+        padding: 12px 40px; 
+        border-radius: 5px;
     }
 
     .card-wrapper__str {
@@ -2671,6 +2743,24 @@
 
     .cell_mr-inline {
         margin-inline: 0;
+    }
+
+    .cell__item-wrap,
+    .cell__item_dark,
+    .cell__item-cont {
+        font-size: 1.6rem;
+    }
+
+    .cell__diamant_text {
+        font-size: 1.2rem;
+    }
+
+    .cell__btn {
+        font-size: 1.2rem;
+    }
+
+    .description {
+        font-size: 1.4rem;
     }
 
     .nav-list {
@@ -2706,7 +2796,7 @@
     }
 
     .fourth-main-section__item {
-        padding: 10px 32px;
+        padding: 10px 28px;
     }
 
     .fourth-container__logo {
@@ -2853,14 +2943,14 @@
         width: 45%;
     }
 
-    .calculation-block__description {
-        width: calc(55% - 15px);
-        padding-left: 15px;
-    }
-
     .calculation-block__left,
     .calculation-block__right {
-        width: 10%;
+        width: 5%;
+    }
+
+    .calculation-block__left-img,
+    .calculation-block__right-img {
+        width: 15%;
     }
 
     .calculation-block__wrapper {
@@ -2930,6 +3020,10 @@
 
     .form__title {
         width: 75%;
+    }
+
+    .form__btn {
+        padding: 12px 22px;
     }
 
     .tenth-main-section {
@@ -3013,9 +3107,21 @@
         right: 0;
         border-radius: 50px 0 0 50px;
         padding: 0 35px;
-        width: 40%;
+        width: 50%;
         height: max-content;
         transform: translate(100%, -50%);
+    }
+
+    .first-right__post {
+        margin-bottom: 15px;
+    }
+
+    .first-right__list {
+        margin-bottom: 10px;
+    }
+
+    .first-right__card {
+        margin-bottom: 10px;
     }
 
     .first-right_active {
@@ -3023,7 +3129,7 @@
     }
 
     .first-right__card_close:nth-last-child(1) {
-        margin-bottom: 35px;
+        margin-bottom: 30px;
     }
 
     .second-main-section__title {
@@ -3036,35 +3142,59 @@
     }
 
     .card-wrapper__col {
-        width: calc(100% - 20px);
-        margin-left: 10px;
-        margin-right: 10px;
+        width: calc(100% - 100px);
+        margin-left: 50px;
+        margin-right: 50px;
         margin-bottom: 0;
     }
 
     .card {
         margin-bottom: 15px;
-        height: 200px;
+        height: 220px;
     }
 
     .card_long {
         padding: 29px 33px;
-        height: 200px;
+        height: 220px;
+    }
+
+    .card__title {
+        font-size: 3rem;
     }
 
     .card__title_long {
-        font-size: 2rem;
+        font-size: 3rem;
         margin-bottom: 28px;
     }
 
+    .card__tag {
+        width: 28%;
+        padding: 10px;
+        border-radius: 30px;
+        font-size: 1.3rem;
+    }
+    
     .card__tag_long {
-        width: 20%;
-        height: 2rem;
-        border-radius: 13px;
+        width: 28%;
+        padding: 10px;
+        border-radius: 30px;
+        font-size: 1.3rem;
+    }
+
+    .card__price {
+        font-size: 1.8rem;
+    }
+
+    .card__price_bold {
+        font-size: 1.8rem;
+    }
+
+    .card__price_bold {
+        font-size: 2.5rem;
     }
 
     .card__price_bold-long {
-        font-size: 1.8rem;
+        font-size: 2.5rem;
     }
 
     .card__price-block_long {
@@ -3072,8 +3202,14 @@
         flex-direction: row-reverse;
     }
 
+    .card__btn {
+        font-size: 1.5rem;   
+        padding: 12px 32px; 
+    }
+
     .card__btn_long {
-        padding: 10px 20px;
+        font-size: 1.5rem;
+        padding: 12px 32px; 
         border-radius: 5px;
     }
 
@@ -3123,6 +3259,33 @@
 
     .cell_mr-inline {
         margin-inline: 0;
+    }
+
+    .description_mr-right {
+        margin-right: 12px;
+    }
+
+    .cell__item-wrap,
+    .cell__item_dark,
+    .cell__item-cont {
+        font-size: 1.2rem;
+    }
+
+    .cell__item_green {
+        font-size: 2.2rem;
+    }
+
+    .cell__btn {
+        padding: 7px;
+        font-size: 1rem;
+    }
+
+    .cell__diamant_img {
+        margin-right: 5px;
+    }
+
+    .description {
+        font-size: 1.2rem;
     }
 
     .fourth-main-section {
@@ -3318,6 +3481,10 @@
         font-size: 1.2rem;
     }
 
+    .form__btn {
+        padding: 12px 22px;
+    }
+
     .eleventh-main-section {
         flex-wrap: wrap;
         margin-bottom: 100px;
@@ -3356,11 +3523,11 @@
         width: 100%;
         height: 350px;
         margin-bottom: 20px;
+        margin-right: 0;
     }
 
     .calculation-block__description {
         width: 100%;
-        padding-left: 0;
     }
 
     .calculation-block__geo {
@@ -3402,6 +3569,10 @@
     .calculation-block__left,
     .calculation-block__right {
         display: none;
+    }
+
+    .calculation-block__footer-btn {
+        font-size: 1.5rem;
     }
 
     .tenth-main-section {
@@ -3499,6 +3670,10 @@
         margin-bottom: 35px;
     }
 
+    .first-right__card-text {
+        font-size: 1.5rem;
+    }
+
     .first-right__card_close:nth-last-child(1) {
         margin-bottom: 45px;
     }
@@ -3521,26 +3696,50 @@
 
     .card {
         margin-bottom: 15px;
+        height: 180px;
+        padding: 25px;
     }
 
     .card_long {
-        padding: 29px 33px;
-        height: 160px;
+        padding: 25px;
+        height: 180px;
+    }
+
+    .card__title {
+        font-size: 2.8rem;
     }
 
     .card__title_long {
-        font-size: 2rem;
+        font-size: 2.8rem;
         margin-bottom: 28px;
     }
 
+    .card__tag {
+        padding: 8px 15px;
+        border-radius: 30px;
+        font-size: 1rem;
+    }
+    
     .card__tag_long {
-        width: 20%;
-        height: 2rem;
-        border-radius: 13px;
+        padding: 8px 15px;
+        border-radius: 30px;
+        font-size: 1rem;
+    }
+
+    .card__price {
+        font-size: 1.3rem;
+    }
+
+    .card__price_bold {
+        font-size: 1.3rem;
+    }
+
+    .card__price_bold {
+        font-size: 2rem;
     }
 
     .card__price_bold-long {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     .card__price-block_long {
@@ -3548,8 +3747,14 @@
         flex-direction: row-reverse;
     }
 
+    .card__btn {
+        font-size: 1rem;   
+        padding: 8px 15px; 
+    }
+
     .card__btn_long {
-        padding: 10px 20px;
+        font-size: 1rem;
+        padding: 8px 15px; 
         border-radius: 5px;
     }
 
@@ -3619,18 +3824,31 @@
         margin-left: 10px !important;
     }
 
+    .description_mr-right {
+        margin-right: 12px;
+    }
+
     .cell__item-wrap,
     .cell__item_dark,
     .cell__item-cont {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
-    .cell__diamant_text {
-        font-size: .95rem;
+    .cell__item_green {
+        font-size: 2.4rem;
+    }
+
+    .cell__btn {
+        padding: 7px;
+        font-size: 1rem;
+    }
+
+    .cell__diamant_img {
+        margin-right: 5px;
     }
 
     .description {
-        font-size: 1.1rem;
+        font-size: 1.25rem;
     }
 
     .fourth-main-section {
@@ -3870,7 +4088,8 @@
     }
 
     .form__btn {
-        padding: 10px 22px;
+        font-size: 1.5rem;
+        padding: 10px 12px;
     }
 
     .form__approval {
@@ -3925,6 +4144,7 @@
         width: 100%;
         height: 250px;
         margin-bottom: 20px;
+        margin-right: 0;
     }
 
     .calculation-block__description {
@@ -3966,11 +4186,14 @@
     }
 
     .calculation-block__footer-btn {
-        padding: 5px 25px;
+        padding: 5px 20px;
+        font-size: 1.2rem;
     }
 
     .calculation-block__footer-btn-img {
         margin-block: 5px;
+        margin-left: 5px;
+        width: 18px;
     }
 
     .tenth-main-section {

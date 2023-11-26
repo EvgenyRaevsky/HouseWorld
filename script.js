@@ -56,20 +56,6 @@ for (let el of calcBlock) {
     })
 }
 
-const bgTree = document.querySelector('.bg-tree')
-
-if ((innerWidth <= 1200) || (innerWidth >= 2000)) {
-    bgTree.style.display = 'none'
-}
-
-window.addEventListener("resize", () => {
-    if ((innerWidth <= 1200) || (innerWidth >= 2000)) {
-        bgTree.style.display = 'none'
-    } else {
-        bgTree.style.display = 'block'
-    }
-}, false);
-
 const firstRight = document.querySelector('.first-right');
 const blackout = document.querySelectorAll('.blackout');
 
@@ -109,6 +95,17 @@ for (let el of mark) {
             e.classList.remove('first-left-block__check-mark-active')
         })
     el.classList.add('first-left-block__check-mark-active')
+    })
+}
+
+const navListMenu = document.querySelectorAll('.nav-list__item')
+
+for (let el of navListMenu) {
+    el.addEventListener('click', () => {
+        navListMenu.forEach(e => {
+            e.classList.remove('nav-list__item_active')
+        })
+        el.classList.add('nav-list__item_active')
     })
 }
 

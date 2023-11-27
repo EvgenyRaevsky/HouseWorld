@@ -987,49 +987,50 @@
         </section>
 
         <section class="seventh-main-section">
-            <h3>
-                <span>Запишитесь на</span>
+            <h3 class="seventh-main-section__title">
+                <span class="seventh-main-section__title_normal">Запишитесь на</span>
                 бесплатную экскурсию
-                <span>по строящимся объектам</span>
+                <span class="seventh-main-section__title_normal">по строящимся объектам</span>
             </h3>
-            <p>На экскурсии вы сможете пообщаться с прорабом и строителями, а также:</p>
-            <div class="container">
-                <article class="content">
-                    <img src="./images/ok.svg" alt="Галочка">
-                    <p>
-                        <span>Познакомитесь</span>
+            <p class="seventh-main-section__text">На экскурсии вы сможете пообщаться с прорабом и строителями, а также:
+            </p>
+            <div class="seventh-main-section__container">
+                <article class="seventh-main-section__content">
+                    <img class="seventh-main-section__ok" src="./images/ok.svg" alt="Галочка">
+                    <p class="seventh-main-section__item">
+                        <span class="seventh-main-section__item_bold">Познакомитесь</span>
                         с технологией строительства
                     </p>
-                </article class="content">
-                <article>
-                    <img src="./images/ok.svg" alt="Галочка">
-                    <p>
-                        <span>Оцените</span>
-                        качетсво материалов на стройплощадке
+                </article>
+                <article class="seventh-main-section__content">
+                    <img class="seventh-main-section__ok" src="./images/ok.svg" alt="Галочка">
+                    <p class="seventh-main-section__item">
+                        <span class="seventh-main-section__item_bold">Оцените</span>
+                        качество материалов на стройплощадке
                     </p>
                 </article>
-                <article class="content">
-                    <img src="./images/ok.svg" alt="Галочка">
-                    <p>
-                        <span>Зададите</span>
+                <article class="seventh-main-section__content">
+                    <img class="seventh-main-section__ok" src="./images/ok.svg" alt="Галочка">
+                    <p class="seventh-main-section__item">
+                        <span class="seventh-main-section__item_bold">Зададите</span>
                         вопросы руководителю строительства
                     </p>
                 </article>
             </div>
             <form class="form-excursion">
-                <div>
-                    <p>Укажите дату:</p>
-                    <input type="date">
+                <div class="form-excursion__block">
+                    <p class="form-excursion__name">Укажите дату:</p>
+                    <input class="form-excursion__input" type="date" value="2022-01-23">
                 </div>
-                <div>
-                    <p>Введите телефон:</p>
-                    <input type="tel" placeholder="+7 800 000-00-00">
+                <div class="form-excursion__block">
+                    <p class="form-excursion__name">Введите телефон:</p>
+                    <input class="form-excursion__input" type="tel" placeholder="+7 800 000-00-00">
                 </div>
-                <div>
-                    <button>Записаться на экскурсию</button>
-                    <p>
+                <div class="form-excursion__block">
+                    <button class="form-excursion__btn">Записаться на экскурсию</button>
+                    <p class="form-excursion__approval">
                         Нажимая на кнопку вы соглашаетесь с условиями
-                        <a href="">Политики конфиденциальности</a>
+                        <a class="form-excursion__approval-link" href="">Политики конфиденциальности</a>
                     </p>
                 </div>
             </form>
@@ -1040,9 +1041,6 @@
                 Скачайте каталог проектов
                 <span class="eighth-main-section__title_normal">с ценами и планировками</span>
             </h1>
-            <div class="eighth-main-section__bg">
-                <img class="eighth-main-section__bg-img" src="./images/catalog.png" alt="Каталог">
-            </div>
             <form class="form">
                 <h3 class="form__title">
                     Скачайте каталог
@@ -1324,65 +1322,62 @@
         </section>
 
         <section class="twelfth-main-section">
-            <div>
-                <div class="container">
-                    <h2>
+            <div class="twelfth-main-section__container">
+                <div class="twelfth-main-section__content">
+                    <h2 class="twelfth-main-section__title">
                         Если у вас уже есть смета на строительство
-                        <span>в 95% случаев мы предлагаем меньшую стоимость и без потери качества</span>
+                        <span class="twelfth-main-section__title_normal">в 95% случаев мы предлагаем меньшую стоимость и
+                            без потери качества</span>
                     </h2>
-                    <p>Как мы этого добиваемся?</p>
-                    <div>
-                        <article class="content">
-                            <img src="./images/ok.svg" alt="Галочка">
-                            <p>
-                                <span>Оптовые скидки</span>
-                                на проверенные метериалы от партнеров (экономия до 30%)
-                            </p>
-                        </article>
-                        <article class="content">
-                            <img src="./images/ok.svg" alt="Галочка">
-                            <p>
-                                <span>Оптимальный подбор</span>
-                                материалов и поставщиков (экономия до 15%)
-                            </p>
-                        </article>
-                        <article class="content">
-                            <img src="./images/ok.svg" alt="Галочка">
-                            <p>
-                                <span>Налаженный рабочий процесс</span>
-                                без потери времени (экономия до 20%)
-                            </p>
-                        </article>
-                    </div>
+                    <p class="twelfth-main-section__question">Как мы этого добиваемся?</p>
+                    <article class="twelfth-main-section__item">
+                        <img class="twelfth-main-section__ok" src="./images/ok.svg" alt="Галочка">
+                        <p class="twelfth-main-section__text">
+                            <span class="twelfth-main-section__text_bold">Оптовые скидки</span>
+                            на проверенные метериалы от партнеров (экономия до 30%)
+                        </p>
+                    </article>
+                    <article class="twelfth-main-section__item">
+                        <img class="twelfth-main-section__ok" src="./images/ok.svg" alt="Галочка">
+                        <p class="twelfth-main-section__text">
+                            <span class="twelfth-main-section__text_bold">Оптимальный подбор</span>
+                            материалов и поставщиков (экономия до 15%)
+                        </p>
+                    </article>
+                    <article class="twelfth-main-section__item">
+                        <img class="twelfth-main-section__ok" src="./images/ok.svg" alt="Галочка">
+                        <p class="twelfth-main-section__text">
+                            <span class="twelfth-main-section__text_bold">Налаженный рабочий процесс</span>
+                            без потери времени (экономия до 20%)
+                        </p>
+                    </article>
                 </div>
             </div>
-            <form class="feedback-form">
-                <h4>Просто прикрепите готовую смету и вы узнаете, как сэкономить на стройке</h4>
-                <p>Инженер-сметчик рассчитает стоимость работ и материалов по оптовым ценам</p>
-                <div>
-                    <input type="text">
-                    <a href=""><img src="./images/clip.png" alt="Скрепка"></a>
-                </div>
-                <h5>Куда отправить подборку?</h5>
-                <div>
-                    <a href="">
-                        <img src="./images/whatsapp.png" alt="what's app">
-                        <p>What's app</p>
-                    </a>
-                    <a href="">
-                        <img src="./images/viber.png" alt="viber">
-                        <p>Viber</p>
-                    </a>
-                    <a href="">
-                        <img src="./images/telegram.png" alt="telegram">
-                        <p>Telegram</p>
-                    </a>
-                </div>
-                <input type="tel" placeholder="+7 800 000-00-00">
-                <button>Получить смету</button>
+            <form class="form form_twelfth">
+                <h4 class="form__title form__title_twelfth">Просто прикрепите готовую смету и вы узнаете, как сэкономить на стройке</h4>
+                <p class="form__text">Инженер-сметчик рассчитает стоимость работ и материалов по оптовым ценам</p>
+                <input class="form-attach" type="text">
+                <p class="form__question">Куда отправить подборку?
                 <p>
+                <div class="messengers">
+                    <div class="messengers__icon">
+                        <img class="messengers__logo" src="./images/whatsapp.svg" alt="what's app">
+                        <p class="messengers__name">What's app</p>
+                    </div>
+                    <div class="messengers__icon messengers__icon-active">
+                        <img class="messengers__logo" src="./images/viber.svg" alt="viber">
+                        <p class="messengers__name"> Viber</p>
+                    </div>
+                    <div class="messengers__icon">
+                        <img class="messengers__logo" src="./images/telegram.svg" alt="telegram">
+                        <p class="messengers__name">Telegram</p>
+                    </div>
+                </div>
+                <input class="form__phone" type="tel" placeholder="+7 800 000-00-00">
+                <button class="form__btn">Получить смету</button>
+                <p class="form__approval">
                     Нажимая на кнопку вы соглашаетесь с условиями
-                    <a href="">Политики конфиденциальности</a>
+                    <a class="form__approval-link" href="">Политики конфиденциальности</a>
                 </p>
             </form>
         </section>

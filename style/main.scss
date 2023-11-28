@@ -1684,7 +1684,7 @@
 }
 
 .left-container {
-    @include flex(false, center, row);
+    @include flex(center, center, row);
     width: 536px;
     position: relative;
 }

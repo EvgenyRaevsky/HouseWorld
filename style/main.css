@@ -1806,7 +1806,7 @@
 .reviews__text {
     width: 85%;
     font-size: 1.2rem;
-    line-height: 1.2rem;
+    line-height: 1.5rem;
     font-weight: 400;
     color: #000000;
     text-align: justify;
@@ -2065,6 +2065,7 @@
 }
 
 .droplist-name__title {
+    width: calc(100% - 82px);
     font-size: 1.3rem;
     font-weight: 700;
     line-height: 1.3rem;
@@ -3400,6 +3401,10 @@
         margin-right: 20px;
     }
 
+    .droplist-name__title {
+        width: calc(100% - 57px);
+    }
+
     .droplist-name-img {
         margin-left: 8px;
         margin-right: 20px;
@@ -4064,8 +4069,9 @@
     }
 
     .eleventh-main-section {
+        width: calc(100% - 10px);
+        margin-inline: 5px;
         flex-wrap: wrap;
-        margin-bottom: 100px;
     }
 
     .left-block {
@@ -4819,8 +4825,9 @@
     }
 
     .eleventh-main-section {
+        width: calc(100% - 10px);
+        margin-inline: 5px;
         flex-wrap: wrap;
-        margin-bottom: 100px;
     }
 
     .left-block {
@@ -4843,6 +4850,10 @@
 
     .right-block {
         width: 100%;
+    }
+
+    .droplist-name__title {
+        width: calc(100% - 57px);
     }
 
     .droplist-name-img {

@@ -1,0 +1,56 @@
+@mixin btn($p-blk, $p-inl, $fz, $fw, $br) {
+    padding: $p-blk $p-inl;
+    font-size: $fz;
+    font-weight: $fw;
+    border-radius: $br;
+    border: none;
+    cursor: pointer;
+}
+
+@mixin link($p-blk, $p-inl, $fz, $fw, $br) {
+    padding: $p-blk $p-inl;
+    font-size: $fz;
+    font-weight: $fw;
+    border-radius: $br;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@mixin flex($al-it, $just-cont, $dir) {
+    display: flex;
+    @if $al-it {
+        align-items: $al-it;
+    } 
+    @if $just-cont { 
+        justify-content: $just-cont;
+    }   
+    @if $dir {
+        flex-direction: $dir;
+    }
+}
+
+@mixin input($p-blk, $p-inl, $fz, $fw, $br) {
+    padding: $p-blk $p-inl; 
+    font-size: $fz;
+    font-weight: $fw;
+    border-radius: $br;
+    border: none;
+    outline: none;
+}
+
+@mixin bg-img($img, $rep, $size, $pos...) {
+    background-repeat: $rep;
+    @if $img {
+        background-image: $img;
+    }
+    @if $size {
+        background-size: $size;
+    }
+    @if length($pos) == 2 {
+        @each $pos1, $pos2 in meta.keywords($pos) {
+            background-position: $pos1 $pos2;
+        }
+    } @else if length($pos) == 1 {
+        background-position: $pos;
+    }
+}
